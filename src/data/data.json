@@ -1,0 +1,225 @@
+{
+  "Header": {
+    "title": "Vocab.ai",
+    "paragraph": "AI based solutions for image, text, and audio analytics,to help improve the Customer Relationship Management (CRM) services."
+  },
+  "About": {
+    "paragraph": "At Vocab.AI, we specialize in leveraging cutting-edge speech and text analytics technologies to revolutionize Customer Relationship Management (CRM) services. By mining and analyzing conversations, we ensure the highest standards of interaction quality, enhancing customer satisfaction and retention. Our collaborations with esteemed institutions like the Indian Institute of Information Technology Dharwad and Wymindz Bangalore empower us to innovate and achieve business excellence. Supported by grants from the Department of Science & Technology, Government of India, and IT Bhilai Innovation and Technology Foundation (IBITF), we are committed to optimizing ROI and achieving your business objectives through advanced analytics and dedicated service enhancement initiatives.",
+    "Why": [
+      "Develop products using speech and text analytics to improve CRM services.",
+      "Enhance customer satisfaction by measuring and improving conversation quality.",
+      "Retain and improve customer loyalty.",
+      "Control operating costs and optimize ROI."
+    ],
+    "Why2": [
+      "Collaborations with prestigious institutions for innovation.",
+      "Supported by grants from the Government of India and IT Bhilai Innovation and Technology Foundation.",
+      "Focus on achieving business goals through advanced analytics.",
+      "Dedicated to service enhancement initiatives to avoid communication failures."
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-microphone",
+      "name": "Speech and Text Analytics",
+      "text": "We leverage advanced speech and text analytics to mine conversations and measure pre-quality of interactions, ensuring the highest standards of communication quality."
+    },
+    {
+      "icon": "fa fa-bullseye",
+      "name": "Customer Intent Identification",
+      "text": "Our services include identifying customer intents to improve sales, collections, and overall customer satisfaction."
+    },
+    {
+      "icon": "fa fa-dollar-sign",
+      "name": "Cost Control",
+      "text": "We help control operating costs and optimize ROI through targeted analytics and strategic insights."
+    },
+    {
+      "icon": "fa fa-users",
+      "name": "Executive Training",
+      "text": "Our executive training programs are designed to enhance service quality and improve customer interactions."
+    },
+    {
+      "icon": "fa fa-shield-alt",
+      "name": "Service Enhancement",
+      "text": "We focus on service enhancement initiatives to avoid communication failures and boost customer loyalty."
+    },
+    {
+      "icon": "fa fa-chart-line",
+      "name": "Business Goal Achievement",
+      "text": "Our analytics-driven approach helps businesses achieve their goals by providing actionable insights and strategies."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/rsp.png",
+      "name": "RSP",
+      "job": "Fulll Time CSO"
+    },
+    {
+      "img": "img/team/vishal.png",
+      "name": "Vishal Khatawate",
+      "job": "Developer (Computer Vision and text processing)"
+    },
+    {
+      "img": "img/team/aarsh.png",
+      "name": "Aarsh Desai",
+      "job": "Intern (Text processing)"
+    },
+    {
+      "img": "img/team/shravya.png",
+      "name": "Shravya Bhat",
+      "job": "Intern (Computer Vision and text processing)"
+    },
+    {
+      "img": "img/team/ankur.png",
+      "name": "Ankur De",
+      "job": "Intern (Computer Vision and text processing)"
+    },
+    {
+      "img": "img/team/nupur.png",
+      "name": "Nupur Sangwai",
+      "job": "Intern (Computer Vision and text processing)"
+    },
+    {
+      "img": "img/team/nancy.png",
+      "name": "Nancy Yadav",
+      "job": "Intern (Deep learning speech and text)"
+    },
+    {
+      "img": "img/team/ashish.png",
+      "name": "Ashish Lal",
+      "job": "Intern (Deep learning speech and text)"
+    },
+    {
+      "img": "img/team/enduri.png",
+      "name": "Enduri Jahnavi",
+      "job": "Intern (Text processing)"
+    },
+    {
+      "img": "img/team/vivaan.png",
+      "name": "Vivaan Sharma",
+      "job": "Intern (Computer Vision and text processing)"
+    },
+    {
+      "img": "img/team/zuhair.png",
+      "name": "Zuhair hasan",
+      "job": "Intern (Deep learning speech and text)"
+    },
+    {
+      "img": "img/team/mandar.png",
+      "name": "Mandar Dighe",
+      "job": "Intern (API Development)"
+    }
+
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Conversation Mining",
+      "text": "We specialize in mining and analyzing conversations to measure and improve the quality of interactions, enhancing customer satisfaction."
+    },
+    {
+      "icon": "fa fa-chart-bar",
+      "title": "Quality Measurement",
+      "text": "Our tools measure the pre-quality of conversations to ensure continuous improvement in customer service."
+    },
+    {
+      "icon": "fa fa-smile",
+      "title": "Customer Satisfaction",
+      "text": "By focusing on quality and intent identification, we aim to enhance overall customer satisfaction and retention."
+    },
+    {
+      "icon": "fa fa-handshake",
+      "title": "Collaboration and Support",
+      "text": "We collaborate with prestigious institutions and are supported by grants from the Department of Science & Technology, Government of India, and IT Bhilai Innovation and Technology Foundation."
+    }
+  ]
+}
