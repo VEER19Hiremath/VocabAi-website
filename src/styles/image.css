@@ -1,0 +1,28 @@
+.team-thumbnail {
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .team-thumbnail:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Increased shadow on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .team-img {
+    width: 100%; /* Ensure image covers the thumbnail */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #ddd; /* Border between image and caption */
+  }
+  
+  .team-name {
+    font-weight: bold; /* Bold text */
+    margin-top: 0; /* Remove top margin */
+  }
+  
+  .team-job {
+    font-weight: bold; /* Bold text */
+    color: #555; /* Subtle color for job title */
+  }
+  

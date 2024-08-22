@@ -14,7 +14,7 @@
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
-    "start": "HOST=0.0.0.0 PORT=8002 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

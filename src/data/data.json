@@ -1,21 +1,21 @@
 {
   "Header": {
     "title": "Vocab.ai",
-    "paragraph": "AI based solutions for image, text, and audio analytics,to help improve the Customer Relationship Management (CRM) services."
+    "paragraph": "AI based solutions for image, text, and audio analytics."
   },
   "About": {
-    "paragraph": "At Vocab.AI, we specialize in leveraging cutting-edge speech and text analytics technologies to revolutionize Customer Relationship Management (CRM) services. By mining and analyzing conversations, we ensure the highest standards of interaction quality, enhancing customer satisfaction and retention. Our collaborations with esteemed institutions like the Indian Institute of Information Technology Dharwad and Wymindz Bangalore empower us to innovate and achieve business excellence. Supported by grants from the Department of Science & Technology, Government of India, and IT Bhilai Innovation and Technology Foundation (IBITF), we are committed to optimizing ROI and achieving your business objectives through advanced analytics and dedicated service enhancement initiatives.",
+    "paragraph": "Vocab-AI is a cutting-edge technology company revolutionising the way businesses harness the power of artificial intelligence. Our innovative solutions empower organisations to unlock valuable insights from their image, text, and audio data. With our advanced AI-based analytics, clients can automate processes, enhance decision-making, and drive growth. From natural language processing , speech recognition and sentiment analysis to image recognition, our expert team develops tailored solutions that transform data into actionable intelligence. Discover how Vocab-AI can help you unlock the full potential of your data and stay ahead in today's rapidly evolving digital landscape..",
     "Why": [
-      "Develop products using speech and text analytics to improve CRM services.",
-      "Enhance customer satisfaction by measuring and improving conversation quality.",
-      "Retain and improve customer loyalty.",
-      "Control operating costs and optimize ROI."
+      "Cutting-Edge AI Solutions: Vocab-AI offers advanced AI-driven tools for image, text, and audio analytics.",
+      "Data Insight Expertise: Specialized in extracting actionable insights from complex data patterns, sentiment, and trends.",
+      "Comprehensive Analytics Suite: A wide range of tools for analyzing multiple data formats, providing a holistic view of business operations.",
+      "Tailored Solutions: Customizable analytics solutions designed to address unique business challenges."
     ],
     "Why2": [
-      "Collaborations with prestigious institutions for innovation.",
-      "Supported by grants from the Government of India and IT Bhilai Innovation and Technology Foundation.",
-      "Focus on achieving business goals through advanced analytics.",
-      "Dedicated to service enhancement initiatives to avoid communication failures."
+      "Seasoned AI Professionals: A team of experienced AI experts dedicated to delivering high-quality results.",
+      "Enhanced Operational Efficiency: Boost productivity and streamline processes through intelligent analytics.",
+      "Informed Decision-Making: Empower businesses with data-driven insights for strategic decisions.",
+      "Competitive Edge: Stay ahead in the market by leveraging Vocab-AI's innovative and forward-thinking solutions."
     ]
   },
   "Gallery": [
@@ -68,33 +68,18 @@
   "Services": [
     {
       "icon": "fa fa-microphone",
-      "name": "Speech and Text Analytics",
-      "text": "We leverage advanced speech and text analytics to mine conversations and measure pre-quality of interactions, ensuring the highest standards of communication quality."
+      "name": "Image analytics",
+      "text": "Vocab.AI offers AI-powered image analytics tools to streamline quality assurance for clients managing large service technician teams. These tools automate the review of images taken during onsite tasks, replacing the slow and subjective manual auditing process. By quickly analyzing large volumes of images, our solutions improve accuracy and efficiency while reducing costs."
     },
     {
       "icon": "fa fa-bullseye",
-      "name": "Customer Intent Identification",
-      "text": "Our services include identifying customer intents to improve sales, collections, and overall customer satisfaction."
+      "name": "Audio Sentiment Analytics",
+      "text": "Audio sentiment analytics revolutionizes customer care by analyzing voice tone, pitch, and language in customer calls to uncover deeper emotions and concerns. This enables companies to pinpoint frustration points, assess agent performance, and detect churn risks early. With these insights, businesses can enhance training, improve support processes, and empower agents to deliver more empathetic and personalized customer experiences."
     },
     {
       "icon": "fa fa-dollar-sign",
-      "name": "Cost Control",
-      "text": "We help control operating costs and optimize ROI through targeted analytics and strategic insights."
-    },
-    {
-      "icon": "fa fa-users",
-      "name": "Executive Training",
-      "text": "Our executive training programs are designed to enhance service quality and improve customer interactions."
-    },
-    {
-      "icon": "fa fa-shield-alt",
-      "name": "Service Enhancement",
-      "text": "We focus on service enhancement initiatives to avoid communication failures and boost customer loyalty."
-    },
-    {
-      "icon": "fa fa-chart-line",
-      "name": "Business Goal Achievement",
-      "text": "Our analytics-driven approach helps businesses achieve their goals by providing actionable insights and strategies."
+      "name": "Text Analytics",
+      "text": "Vocab-AI’s text analytics solutions transform customer-agent interactions by analyzing chat transcripts to measure performance in areas like empathy, greetings, and feedback. Our tools offer feedback and coaching to enhance agent communication and efficiency, while the analytics dashboard provides insights into customer preferences, behavior, and journey mapping. This empowers businesses to optimize support processes and deliver personalized experiences."
     }
   ],
   "Testimonials": [
@@ -193,9 +178,9 @@
 
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "Vocab.AI Private Limited, #19/3, 3rd Floor Srinivasa Industrial Estate, Kanakapura Main Road, Konanakunte Post, Bengaluru – 56062, www.wyzmindz.com ",
     "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "email": "contact@vocab-ai.com , hr@vocab-ai.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
@@ -203,23 +188,18 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Conversation Mining",
-      "text": "We specialize in mining and analyzing conversations to measure and improve the quality of interactions, enhancing customer satisfaction."
+      "title": "Text Analytics",
+      "text": "Text analytics is revolutionising business worldwide by unlocking valuable insights from unstructured data, such as customer feedback, social media posts, and product reviews. By leveraging natural language processing (NLP) and machine learning algorithms, we are helping our clients to identify trends, sentiment, and patterns, enabling data-driven decision-making. Our area of expertise is towards improving the customer experience while they visit our clients with their queries. Our tools are helping businesses to enhance their operational efficiency, drive innovation, and gain a competitive edge in the global market."
     },
     {
       "icon": "fa fa-chart-bar",
-      "title": "Quality Measurement",
-      "text": "Our tools measure the pre-quality of conversations to ensure continuous improvement in customer service."
+      "title": "Audio Analytics",
+      "text": "Audio analytics is transforming business worldwide by uncovering hidden insights from audio data, such as customer calls, voice assistants, and ambient noise. Our solutions in the area of speech recognition, machine learning, and natural language processing techniques, help our clients analyse and understand vast amounts of audio information, leading to improved customer service, enhanced operational efficiency, and innovative product development. Our audio analytics tools are being used across call centres to detect customer sentiments, and other linguistic and paralinguistic information, enabling businesses to make data-driven decisions, drive growth, and stay ahead of the competition."
     },
     {
       "icon": "fa fa-smile",
-      "title": "Customer Satisfaction",
-      "text": "By focusing on quality and intent identification, we aim to enhance overall customer satisfaction and retention."
-    },
-    {
-      "icon": "fa fa-handshake",
-      "title": "Collaboration and Support",
-      "text": "We collaborate with prestigious institutions and are supported by grants from the Department of Science & Technology, Government of India, and IT Bhilai Innovation and Technology Foundation."
+      "title": "Image Analytics",
+      "text": " Image analytics is revolutionising business worldwide by extracting valuable insights from image data. Our image analytics solutions leverage computer vision, machine learning, and deep learning algorithms, and analyse and understand visual content, enabling applications like object detection, facial recognition, and Barcode and LCD/LED panel information extraction. Using such tools, it is possible for our clients to ensure an improved customer experience while remotely assessing the performance of their executives. Our clients mostly use image analytics to analyse the quality of service being provided by service technicians while installing several appliances. As image analytics continues to advance, it is poised to unlock new opportunities and transform the services and customer experience."
     }
   ]
 }

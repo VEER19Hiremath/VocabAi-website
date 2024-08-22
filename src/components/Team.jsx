@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/image.css'; // Import the CSS file for custom styling
 
 export const Team = (props) => {
   return (
@@ -11,16 +12,15 @@ export const Team = (props) => {
             dapibus leonec.
           </p> */}
         </div>
-        <div id="row">
+        <div className="row">
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 team">
-                  <div className="thumbnail">
-                    {" "}
-                    <img src={d.img} alt="..." className="team-img" />
+                  <div className="thumbnail team-thumbnail">
+                    <img src={d.img} alt={d.name} className="team-img" />
                     <div className="caption">
-                      <h4>{d.name}</h4>
-                      <p>{d.job}</p>
+                      <h4 className="team-name">{d.name}</h4>
+                      <p className="team-job">{d.job}</p>
                     </div>
                   </div>
                 </div>

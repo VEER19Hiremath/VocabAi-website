@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 export const Navigation = (props) => {
@@ -13,22 +11,18 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
           {/* Navbar brand with image */}
           <a className="navbar-brand page-scroll" href="#page-top">
             <img src="/img/logo.png" alt="Logo" className="logo" style={{ maxHeight: '50px', marginRight: '10px' }} /> 
-          </a>{" "}
+          </a>
         </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
+        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="#features" className="page-scroll">
@@ -45,10 +39,15 @@ export const Navigation = (props) => {
                 Services
               </a>
             </li>
-            <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
+            <li className="dropdown">
+              <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                Demo <b className="caret"></b>
               </a>
+              <ul className="dropdown-menu">
+                <li><a href="/text-analytics-demo">Text Analytics Demo</a></li>
+                <li><a href="/image-analytics-demo">Image Analytics Demo</a></li>
+                <li><a href="/speech-emotions-demo">Speech Emotions Demo</a></li>
+              </ul>
             </li>
             <li>
               <a href="#testimonials" className="page-scroll">

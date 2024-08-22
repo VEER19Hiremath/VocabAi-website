@@ -1,0 +1,51 @@
+#services {
+    padding: 60px 0; /* Space around the section */
+  }
+  
+  .section-title {
+    margin-bottom: 40px; /* Space below the title */
+  }
+  
+  .section-title h2 {   
+    font-weight: bold; /* Bold heading */
+  }
+  
+  .service-card {
+    background-color: #191717; /* Background color for the service card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding-left: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Center align text */
+    height: 500px; /* Ensure it fills available height */
+    display: flex;
+    width:500px;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Increased shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  .service-icon {
+    font-size: 40px; /* Icon size */
+    color: #007bff; /* Icon color */
+    margin-bottom: 15px; /* Space below the icon */
+    margin-left: 150px;
+  }
+  
+  .service-desc h3 {
+    font-weight: bold; /* Bold service name */
+    margin-bottom: 10px; /* Space below the name */
+  }
+  
+  .service-desc p {
+    color: #555; /* Text color */
+  }
+  .row{
+    margin-left: 50px;
+  }
+  
