@@ -9,16 +9,14 @@ export const Services = (props) => {
           <h2>Our Services</h2>
           <p>Services by Vocab.AI</p>
         </div>
-        <div className="row">
+        <div className="service-container">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-3">
-                  <div className="service-card">
-                    <i className={`service-icon ${d.icon}`}></i>
-                    <div className="service-desc">
-                      <h3>{d.name}</h3>
-                      <p>{d.text}</p>
-                    </div>
+                <div key={`${d.name}-${i}`} className="service-card">
+                  <i className={`service-icon ${d.icon}`}></i>
+                  <div className="service-desc">
+                    <h3>{d.name}</h3>
+                    <p>{d.text}</p>
                   </div>
                 </div>
               ))

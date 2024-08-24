@@ -1,75 +1,88 @@
 .about-image-container {
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden; /* Ensure image fits within rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
-    margin-bottom: 20px; /* Space below image */
-  }
-  
-  .about-image-container img {
-    width: 100%; /* Ensure image covers the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove bottom space */
-  }
-  
-  .about-text-container {
-    background-color: #fff; /* Background color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .about-text-container:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect */
-  }
-  
-  .about-text-container h2 {
-    font-weight: bold; /* Bold headings */
-  }
-  
-  .about-text-container p {
-    color: #555; /* Text color */
-  }
-  
-  .why-choose-us-container {
-    margin-top: 20px; /* Space between About Us and Why Choose Us? */
-  }
-  
-  .why-choose-us-container h3 {
-    font-weight: bold; /* Bold heading */
-    margin-bottom: 20px; /* Space below heading */
-  }
-  
-  .list-style {
-    display: flex;
-    flex-wrap: wrap; /* Ensure lists are responsive */
-  }
-  
-  .list-style ul {
-    padding-left: 0; /* Remove default padding */
-    list-style-type: none; /* Remove default list styling */
-  }
-  
-  .list-style ul li {
-    background: #f9f9f9; /* Background color for list items */
-    border-radius: 4px; /* Rounded corners for list items */
-    padding: 10px; /* Padding inside list items */
-    margin-bottom: 10px; /* Space between list items */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for list items */
-    position: relative; /* Position relative for custom bullets */
-    padding-left: 40px; /* Space for custom bullet */
-  }
-  
-  .list-style ul li::before {
-    content: ''; /* Empty content */
-    position: absolute; /* Absolute positioning */
-    left: 10px; /* Space from the left edge */
-    top: 50%; /* Center vertically */
-    width: 20px; /* Width of the bullet */
-    height: 20px; /* Height of the bullet */
-    background-color: #007bff; /* Bullet color */
-    border-radius: 50%; /* Round bullet */
-    transform: translateY(-50%); /* Center bullet vertically */
-  }
-  
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure image fits within rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+  margin-bottom: 20px; /* Space below image */
+}
+
+.about-image-container img {
+  width: 100%; /* Ensure image covers the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space */
+}
+
+.about-text-container {
+  background-color: #fff; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-text-container:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.about-text-container h2 {
+  font-weight: bold; /* Bold headings */
+}
+
+.about-text-container p {
+  color: #555; /* Text color */
+}
+
+.why-choose-us-container {
+  background-color: #fff; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.why-choose-us-container:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.why-choose-us-container h3 {
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.list-style {
+  display: flex;
+  flex-wrap: wrap; /* Ensure lists are responsive */
+}
+
+.list-style ul {
+  padding-left: 0; /* Remove default padding */
+  list-style-type: none; /* Remove default list styling */
+}
+
+.list-style ul li {
+  background: #f9f9f9; /* Background color for list items */
+  border-radius: 4px; /* Rounded corners for list items */
+  padding: 10px; /* Padding inside list items */
+  margin-bottom: 10px; /* Space between list items */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for list items */
+  position: relative; /* Position relative for custom bullets */
+  padding-left: 40px; /* Space for custom bullet */
+}
+
+.list-style ul li::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Absolute positioning */
+  left: 10px; /* Space from the left edge */
+  top: 50%; /* Center vertically */
+  width: 20px; /* Width of the bullet */
+  height: 20px; /* Height of the bullet */
+  background-color: #007bff; /* Bullet color */
+  border-radius: 50%; /* Round bullet */
+  transform: translateY(-50%); /* Center bullet vertically */
+}
+
+/* Spacer between About Us and Why Choose Us */
+.spacer {
+  height: 40px; /* Adjust the height to create the desired space */
+}
