@@ -1,42 +1,78 @@
+/* Define the slideshow container */
 .intro {
-    display: table;
-    width: 100%;
-    /* height: 100%; */
-    padding: 0;
-    background: url(../img/intro-bg.jpg) center center no-repeat;
-    background-color: #e5e5e5;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-  .intro .overlay {
-    background: rgba(0, 0, 0, 0.2);
-    height:100%;
-  }
-  .intro h1 {
-    font-family: "Raleway", sans-serif;
-    color: #fff;
-    font-size: 82px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  .intro h1 span {
-    font-weight: 800;
-    color: #5ca9fb;
-  }
-  .intro p {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 30px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-  }
-  header .intro-text {
-    padding-top: 350px;
-    padding-bottom: 200px;
-    text-align: center;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+/* Define the slideshow images */
+.intro .slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: slide 15s infinite; /* Adjust duration for slideshow */
+}
+
+.intro .slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* Animation for the slideshow */
+@keyframes slide {
+  0% { opacity: 1; }
+  33.33% { opacity: 0; }
+  66.66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Define different stages for each image */
+.intro .slideshow img:nth-child(1) {
+  animation: slide 15s infinite;
+}
+
+.intro .slideshow img:nth-child(2) {
+  animation: slide 15s infinite 5s; /* Delay for second image */
+}
+
+.intro .slideshow img:nth-child(3) {
+  animation: slide 15s infinite 10s; /* Delay for third image */
+}
+
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.intro h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb;
+}
+
+.intro p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+header .intro-text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+}

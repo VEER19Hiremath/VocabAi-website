@@ -1,10 +1,15 @@
 import React from "react";
-import "../styles/header.css"
+import "../styles/header.css";
 
 export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
+        <div className="slideshow">
+          <img src="../img/intro-bg1" alt="Slide 1" />
+          <img src="../img/intro-bg2.jpg" alt="Slide 2" />
+          <img src="../img/intro-bg3.jpg" alt="Slide 3" />
+        </div>
         <div className="overlay">
           <div className="container">
             <div className="row">
