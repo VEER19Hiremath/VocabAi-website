@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/image.css'; // Import the CSS file for custom styling
+import '../styles/team-image.css'; // Import the CSS file for custom styling
 
 export const Team = (props) => {
   return (

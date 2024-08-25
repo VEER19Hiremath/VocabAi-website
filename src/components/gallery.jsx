@@ -1,5 +1,6 @@
 import { Image } from "./image";
 import React from "react";
+import '../styles/gallery.css'; // Import the CSS file for the gallery
 
 export const Gallery = (props) => {
   return (
@@ -12,23 +13,21 @@ export const Gallery = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className="row">
-          <div className="portfolio-items">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div
-                    key={`${d.title}-${i}`}
-                    className="col-sm-6 col-md-4 col-lg-4"
-                  >
-                    <Image
-                      title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
-                    />
-                  </div>
-                ))
-              : "Loading..."}
-          </div>
+        <div className="gallery-container">
+          {props.data
+            ? props.data.map((d, i) => (
+                <div
+                  key={`${d.title}-${i}`}
+                  className="gallery-slide"
+                >
+                  <Image
+                    title={d.title}
+                    largeImage={d.largeImage}
+                    smallImage={d.smallImage}
+                  />
+                </div>
+              ))
+            : "Loading..."}
         </div>
       </div>
     </div>

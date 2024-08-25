@@ -1,0 +1,36 @@
+/* gallery-image.css */
+
+/* Styling for the portfolio item */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Optional: Match border radius with slideshow */
+  border: 2px solid #ddd; /* Optional: Adjust border color */
+}
+
+/* Styling for the hover background */
+.hover-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the hover text */
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive image styling */
+.img-responsive {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 8px; /* Match border radius with portfolio item */
+}
+  

@@ -26,3 +26,23 @@
     color: #555; /* Subtle color for job title */
   }
   
+
+
+  #team {
+    padding: 100px 0;
+  }
+  #team h4 {
+    margin: 5px 0;
+  }
+  #team .team-img {
+    width: 240px;
+    height: 200px;
+  }
+  #team .thumbnail {
+    background: transparent;
+    border: 0;
+  }
+  #team .thumbnail .caption {
+    padding: 10px 0 0;
+    color: #888;
+  }

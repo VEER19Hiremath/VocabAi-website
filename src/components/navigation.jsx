@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../styles/navigation.css'
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
