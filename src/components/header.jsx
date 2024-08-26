@@ -6,9 +6,9 @@ export const Header = (props) => {
     <header id="header">
       <div className="intro">
         <div className="slideshow">
-          <img src="../img/intro-bg1" alt="Slide 1" />
-          <img src="../img/intro-bg2.jpg" alt="Slide 2" />
-          <img src="../img/intro-bg3.jpg" alt="Slide 3" />
+          <img src="../img/intro-bg" alt="Slide 1" />
+          <img src="../img/intro-bg.jpg" alt="Slide 2" />
+          <img src="../img/intro-bg.jpg" alt="Slide 3" />
         </div>
         <div className="overlay">
           <div className="container">

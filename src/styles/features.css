@@ -1,52 +1,85 @@
 .feature-box {
-    margin-bottom: 30px; /* Space between rows */
-  }
-  
-  .feature-content {
-    background-color: #fff; /* Background color */
-    border: 1px solid #ddd; /* Border color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    text-align: center; /* Center text */
-    height: 560px; /* Ensure full height of the container */
-  }
-  
-  .feature-content i {
-    font-size: 36px; /* Icon size */
-    color: #333; /* Icon color */
-    margin-bottom: 15px; /* Space between icon and title */
-  }
-  
-  .feature-content h3 {
-    font-weight: bold; /* Bold title */
-    margin-top: 0; /* Remove top margin */
-    margin-bottom: 10px; /* Space below title */
-  }
-  
-  .feature-content p {
-    color: #555; /* Subtle color for text */
-    margin-bottom: 0; /* Remove bottom margin */
-  }
-  
-  .feature-content:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Increased shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect */
-  }
-  
-  #features {
-    padding-top: 5%;
-    background: #f6f6f6;
-  }
-  #features i.fa {
-    font-size: 38px;
-    margin-bottom: 20px;
-    transition: all 0.5s;
-    color: #fff;
-    width: 100px;
-    padding: 30px 0;
-    border-radius: 50%;
-    background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-  }
+  margin-bottom: 30px; /* Space between rows */
+}
+
+.feature-content {
+  background-color: #fff; /* Background color */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  text-align: center; /* Center text */
+  overflow: hidden; /* Hide text initially */
+  position: relative; /* Ensure text positioning */
+  width: 100%; /* Initial width */
+  max-width: 300px; /* Maximum width */
+  min-height: 250px; /* Minimum height to accommodate icon and title */
+  margin: 0 auto; /* Center the box */
+}
+
+.feature-content i {
+  font-size: 36px; /* Icon size */
+  color: #333; /* Icon color */
+  margin-bottom: 10px; /* Space between icon and title */
+  transition: all 0.3s ease; /* Smooth transition for icon */
+}
+
+.feature-content h3 {
+  font-weight: bold; /* Bold title */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove bottom margin */
+  transition: all 0.3s ease; /* Smooth transition for title */
+}
+
+.feature-content p {
+  color: #555; /* Subtle color for text */
+  opacity: 0; /* Hide text initially */
+  transition: opacity 0.3s ease; /* Smooth transition for text visibility */
+  margin-top: 15px; /* Add space above text */
+  position: relative; /* Adjust positioning */
+}
+
+.feature-content:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+  background-color: #f0f8ff; /* Change background color on hover */
+  width: auto; /* Allow width to expand based on content */
+  max-width: 400px; /* Maximum width when expanded */
+  padding-bottom: 30px; /* Add more padding at the bottom when expanded */
+}
+
+.feature-content:hover i {
+  font-size: 42px; /* Increase icon size on hover */
+  margin-bottom: 5px; /* Decrease space between icon and title */
+  color: #007bff; /* Change icon color on hover */
+}
+
+.feature-content:hover h3 {
+  font-size: 24px; /* Increase title size on hover */
+  color: #007bff; /* Change title color on hover */
+  margin-bottom: 5px; /* Decrease space below title */
+}
+
+.feature-content:hover p {
+  opacity: 1; /* Show text on hover */
+  font-size: 16px; /* Change text size on hover */
+  color: #333; /* Change text color on hover */
+}
+
+#features {
+  padding-top: 5%;
+  background: #f6f6f6;
+}
+
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
