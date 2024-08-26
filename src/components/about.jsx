@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/about.css'; // Ensure the path to your CSS file is correct
 
 export const About = (props) => {
+  // State to track which items are expanded
+  const [expandedItems, setExpandedItems] = useState({});
+
+  // Function to toggle the expansion of list items
+  const toggleExpand = (index) => {
+    setExpandedItems((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
+
+  // Helper function to split the text at the first colon
+  const splitText = (text) => {
+    const [beforeColon, afterColon] = text.split(/:(.+)/);
+    return { beforeColon, afterColon };
+  };
+
   return (
     <div id="about">
       <div className="container">
@@ -31,18 +48,54 @@ export const About = (props) => {
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
                     {props.data
-                      ? props.data.Why.map((d, i) => (
-                          <li key={`${d}-${i}`}>{d}</li>
-                        ))
+                      ? props.data.Why.map((d, i) => {
+                          const { beforeColon, afterColon } = splitText(d);
+                          return (
+                            <li key={`${d}-${i}`}>
+                              {beforeColon}
+                              {afterColon && (
+                                <>
+                                  <button
+                                    className="expand-btn"
+                                    onClick={() => toggleExpand(i)}
+                                  >
+                                    {expandedItems[i] ? "-" : "+"}
+                                  </button>
+                                  {expandedItems[i] && (
+                                    <span className="expanded-text">{afterColon}</span>
+                                  )}
+                                </>
+                              )}
+                            </li>
+                          );
+                        })
                       : "loading"}
                   </ul>
                 </div>
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
                     {props.data
-                      ? props.data.Why2.map((d, i) => (
-                          <li key={`${d}-${i}`}>{d}</li>
-                        ))
+                      ? props.data.Why2.map((d, i) => {
+                          const { beforeColon, afterColon } = splitText(d);
+                          return (
+                            <li key={`${d}-${i}`}>
+                              {beforeColon}
+                              {afterColon && (
+                                <>
+                                  <button
+                                    className="expand-btn"
+                                    onClick={() => toggleExpand(`Why2-${i}`)}
+                                  >
+                                    {expandedItems[`Why2-${i}`] ? "-" : "+"}
+                                  </button>
+                                  {expandedItems[`Why2-${i}`] && (
+                                    <span className="expanded-text">{afterColon}</span>
+                                  )}
+                                </>
+                              )}
+                            </li>
+                          );
+                        })
                       : "loading"}
                   </ul>
                 </div>

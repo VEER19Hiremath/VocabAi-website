@@ -1,7 +1,7 @@
 .about-image-container {
   border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Ensure image fits within rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
   margin-bottom: 20px; /* Space below image */
 }
 
@@ -15,12 +15,12 @@
   background-color: #fff; /* Background color */
   border-radius: 8px; /* Rounded corners */
   padding: 20px; /* Padding inside the box */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .about-text-container:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
   transform: translateY(-5px); /* Slight lift effect */
 }
 
@@ -36,12 +36,11 @@
   background-color: #fff; /* Background color */
   border-radius: 8px; /* Rounded corners */
   padding: 20px; /* Padding inside the box */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
-
 .why-choose-us-container:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
   transform: translateY(-5px); /* Slight lift effect */
 }
 
@@ -65,21 +64,34 @@
   border-radius: 4px; /* Rounded corners for list items */
   padding: 10px; /* Padding inside list items */
   margin-bottom: 10px; /* Space between list items */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for list items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for list items */
   position: relative; /* Position relative for custom bullets */
   padding-left: 40px; /* Space for custom bullet */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.list-style ul li::before {
-  content: ''; /* Empty content */
-  position: absolute; /* Absolute positioning */
-  left: 10px; /* Space from the left edge */
-  top: 50%; /* Center vertically */
-  width: 20px; /* Width of the bullet */
-  height: 20px; /* Height of the bullet */
-  background-color: #007bff; /* Bullet color */
-  border-radius: 50%; /* Round bullet */
-  transform: translateY(-50%); /* Center bullet vertically */
+.list-style ul li .expand-btn {
+  background-color: #007bff; /* Button color */
+  border: none; /* Remove default border */
+  color: #fff; /* Button text color */
+  padding: 5px 10px; /* Padding for the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Button font size */
+  margin-left: 10px; /* Space between text and button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.list-style ul li .expand-btn:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.list-style ul li .expanded-text {
+  display: inline-block; /* Display inline with other text */
+  margin-left: 10px; /* Space between colon and expanded text */
+  color: #333; /* Text color for expanded content */
 }
 
 /* Spacer between About Us and Why Choose Us */
@@ -90,15 +102,18 @@
 #about {
   padding: 100px 0;
 }
+
 #about h3 {
   font-size: 22px;
   margin: 0 0 20px;
 }
+
 #about h2 {
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
+
 #about h2::after {
   position: absolute;
   content: "";
@@ -108,12 +123,14 @@
   bottom: 0;
   left: 0;
 }
+
 #about .about-text li {
   margin-bottom: 6px;
   margin-left: 6px;
   list-style: none;
   padding: 0;
 }
+
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
@@ -122,6 +139,7 @@
   font-weight: 300;
   padding-right: 8px;
 }
+
 #about img {
   width: 520px;
   margin-top: 10px;
@@ -129,7 +147,8 @@
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
+
 #about p {
   line-height: 24px;
   margin: 30px 0;
-} 
+}
