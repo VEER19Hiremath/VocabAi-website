@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import '../styles/about.css'; // Ensure the path to your CSS file is correct
+import TypingEffect from './TypinfEffect'; // Import the TypingEffect component
 
 export const About = (props) => {
   // State to track which items are expanded
@@ -31,7 +32,8 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text-container">
               <h2>About Us</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
+              {/* Use TypingEffect component */}
+              <TypingEffect text={props.data ? props.data.paragraph : "loading..."} />
             </div>
           </div>
         </div>
