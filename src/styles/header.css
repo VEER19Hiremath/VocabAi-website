@@ -1,78 +1,85 @@
-/* Define the slideshow container */
-.intro {
+/* Header */
+#header {
   position: relative;
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
 }
 
-/* Define the slideshow images */
-.intro .slideshow {
+.intro {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  animation: slide 15s infinite; /* Adjust duration for slideshow */
+  background-image: url('../img/intro-bg.jpg'); /* Single background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  z-index: 1; /* Ensure it is behind the overlay */
 }
 
-.intro .slideshow img {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  position: absolute;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with some transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Ensure it is above the background image */
 }
 
-/* Animation for the slideshow */
-@keyframes slide {
-  0% { opacity: 1; }
-  33.33% { opacity: 0; }
-  66.66% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* Define different stages for each image */
-.intro .slideshow img:nth-child(1) {
-  animation: slide 15s infinite;
-}
-
-.intro .slideshow img:nth-child(2) {
-  animation: slide 15s infinite 5s; /* Delay for second image */
-}
-
-.intro .slideshow img:nth-child(3) {
-  animation: slide 15s infinite 10s; /* Delay for third image */
-}
-
-.intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
-  height: 100%;
-}
-
-.intro h1 {
-  font-family: "Raleway", sans-serif;
+.intro-text {
   color: #fff;
-  font-size: 82px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.intro h1 span {
-  font-weight: 800;
-  color: #5ca9fb;
-}
-
-.intro p {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 30px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-
-header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
   text-align: center;
+  z-index: 3; /* Ensure text is above the overlay */
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.intro-text h1 span {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  margin: 20px auto 0;
+}
+
+.intro-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5ca9fb;
+  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+
+.btn-custom:hover {
+  background-color: #6372ff;
 }

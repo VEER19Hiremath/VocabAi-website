@@ -5,11 +5,7 @@ export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
-        <div className="slideshow">
-          <img src="../img/intro-bg" alt="Slide 1" />
-          <img src="../img/intro-bg.jpg" alt="Slide 2" />
-          <img src="../img/intro-bg.jpg" alt="Slide 3" />
-        </div>
+        <div className="background-image"></div>
         <div className="overlay">
           <div className="container">
             <div className="row">
