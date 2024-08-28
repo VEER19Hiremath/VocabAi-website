@@ -178,7 +178,7 @@
 
   ],
   "Video": {
-    "src": "video/text-analytice.mp4",
+    "src": "video/text-analytics.mp4",
     "description": "In this demo, we showcase how text analytics can be used to extract meaningful insights from textual data, identify key trends, and improve customer experiences through advanced text mining techniques."
   },
   "Contact": {

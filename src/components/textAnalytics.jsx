@@ -40,7 +40,7 @@ export const TextAnalytics = ({ data }) => {
     <div className="text-analytics-container">
       <h2 className="text-analytics-title">Text Analytics Demo</h2>
       <div className="video-and-text">
-        <video className="text-analytics-video" width="40%" controls>
+        <video className="text-analytics-video" width="20%" controls>
           <source src={data.src} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
