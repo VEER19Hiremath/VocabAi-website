@@ -11,9 +11,9 @@
   align-items: center; /* Center content horizontally */
   width: 100%; /* Ensure full width within column */
   height: 300px; /* Initial fixed height */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  padding: 0; /* No padding needed */
+  padding: 10px; /* Add padding to create space between image and border */
   box-sizing: border-box; /* Include padding in the height and width calculations */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .team-thumbnail:hover {
