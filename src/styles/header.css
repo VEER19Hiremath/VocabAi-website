@@ -19,11 +19,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/intro-bg.jpg'); /* Single background image */
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating */
   z-index: 1; /* Ensure it is behind the overlay */
+  transition: background-image 1s ease-in-out; /* Smooth transition between images */
 }
 
 .overlay {

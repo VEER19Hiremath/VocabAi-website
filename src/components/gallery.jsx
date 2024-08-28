@@ -8,26 +8,25 @@ export const Gallery = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
+          <p>This section contains images of Vocab</p>
         </div>
         <div className="gallery-container">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div
-                  key={`${d.title}-${i}`}
-                  className="gallery-slide"
-                >
-                  <Image
-                    title={d.title}
-                    largeImage={d.largeImage}
-                    smallImage={d.smallImage}
-                  />
-                </div>
-              ))
-            : "Loading..."}
+          <div className="gallery-inner">
+            {props.data
+              ? props.data.map((d, i) => (
+                  <div
+                    key={`${d.title}-${i}`}
+                    className="gallery-slide"
+                  >
+                    <Image
+                      title={d.title}
+                      largeImage={d.largeImage}
+                      smallImage={d.smallImage}
+                    />
+                  </div>
+                ))
+              : "Loading..."}
+          </div>
         </div>
       </div>
     </div>

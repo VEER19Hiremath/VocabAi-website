@@ -177,6 +177,10 @@
     }
 
   ],
+  "Video": {
+    "src": "video/text-analytice.mp4",
+    "description": "In this demo, we showcase how text analytics can be used to extract meaningful insights from textual data, identify key trends, and improve customer experiences through advanced text mining techniques."
+  },
   "Contact": {
     "address": "Vocab.AI Private Limited, #19/3, 3rd Floor Srinivasa Industrial Estate, Kanakapura Main Road, Konanakunte Post, Bengaluru – 56062, www.wyzmindz.com ",
     "phone": "+1 123 456 1234",

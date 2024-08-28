@@ -1,0 +1,35 @@
+.text-analytics-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .text-analytics-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .video-and-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Adjust spacing between video and text */
+  }
+  
+  .text-analytics-video {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width:100%;
+  }
+  
+  .text-analytics-description-container {
+    width: 50%;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .text-analytics-description {
+    font-size: 2.0rem;
+    white-space: pre-wrap; /* Preserve line breaks */
+    overflow: hidden;
+  }
+  

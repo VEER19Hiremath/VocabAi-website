@@ -1,6 +1,19 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";  // Import Link from react-scroll
 import '../styles/navigation.css'
+
 export const Navigation = (props) => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (section) => {
+    // Navigate to the home page, then scroll to the section
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -16,7 +29,6 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          {/* Navbar brand with image */}
           <a className="navbar-brand page-scroll" href="#page-top">
             <img src="/img/logo.png" alt="Logo" className="logo" style={{ maxHeight: '50px', marginRight: '10px' }} /> 
           </a>
@@ -25,44 +37,80 @@ export const Navigation = (props) => {
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+              <ScrollLink
+                to="features"
+                smooth={true}
+                duration={1000}
+                className="page-scroll"
+                onClick={() => handleNavigation("features")}
+              >
                 Features
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={1000}
+                className="page-scroll"
+                onClick={() => handleNavigation("about")}
+              >
                 About
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <ScrollLink
+                to="services"
+                smooth={true}
+                duration={1000}
+                className="page-scroll"
+                onClick={() => handleNavigation("services")}
+              >
                 Services
-              </a>
+              </ScrollLink>
             </li>
             <li className="dropdown">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                 Demo <b className="caret"></b>
               </a>
               <ul className="dropdown-menu">
-                <li><a href="/text-analytics-demo">Text Analytics Demo</a></li>
-                <li><a href="/image-analytics-demo">Image Analytics Demo</a></li>
-                <li><a href="/speech-emotions-demo">Speech Emotions Demo</a></li>
+                <li><Link to="/text-analytics-demo">Text Analytics Demo</Link></li>
+                <li><Link to="/image-analytics-demo">Image Analytics Demo</Link></li>
+                <li><Link to="/speech-emotions-demo">Speech Emotions Demo</Link></li>
               </ul>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
+              <ScrollLink
+                to="testimonials"
+                smooth={true}
+                duration={1000}
+                className="page-scroll"
+                onClick={() => handleNavigation("testimonials")}
+              >
+                Gallery
+              </ScrollLink>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <ScrollLink
+                to="team"
+                smooth={true}
+                duration={1000}
+                className="page-scroll"
+                onClick={() => handleNavigation("team")}
+              >
                 Team
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={1000}
+                className="page-scroll"
+                onClick={() => handleNavigation("contact")}
+              >
                 Contact
-              </a>
+              </ScrollLink>
             </li>
           </ul>
         </div>

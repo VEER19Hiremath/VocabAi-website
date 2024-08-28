@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/header.css";
 
 export const Header = (props) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [
+    '../img/intro-bg.jpg',
+    '../img/intro-bg-2.jpg',
+    '../img/intro-bg-3.jpg'
+
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+  }, [images.length]);
+
   return (
     <header id="header">
       <div className="intro">
-        <div className="background-image"></div>
+        <div
+          className="background-image"
+          style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+        ></div>
         <div className="overlay">
           <div className="container">
             <div className="row">

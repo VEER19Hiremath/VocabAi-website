@@ -2,32 +2,48 @@
 
 /* Container for the slideshow */
 .gallery-container {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-  
-  /* Individual slide styling */
-  .gallery-slide {
-    min-width: 100%; /* Ensures each slide takes full width */
-    box-sizing: border-box;
-  }
-  
-  /* Keyframes for sliding animation */
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  /* Apply animation to gallery container */
-  .gallery-container {
-    animation: slide 10s infinite linear; /* Adjust timing for desired speed */
-  }
-  
-  /* Optional: Add borders and radius to images */
-  .portfolio-item img {
-    border: 2px solid #ddd; /* Adjust border as needed */
-    border-radius: 8px; /* Adjust radius as needed */
-  }
-  
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* Adjust the height according to your images */
+  height: 700px; /* Example height */
+}
+
+/* Inner container to hold all slides */
+.gallery-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+  width: 100%; /* Adjust width to fit all slides */
+  height: 100%;
+}
+
+/* Individual slide styling */
+.gallery-slide {
+  min-width: 100%; /* Ensures each slide takes full width */
+  box-sizing: border-box;
+}
+
+/* Optional: Add borders and radius to images */
+.portfolio-item img {
+  border: 2px solid #ddd; /* Adjust border as needed */
+  border-radius: 8px; /* Adjust radius as needed */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Apply animation to gallery container */
+.gallery-container {
+  overflow: hidden; /* Hide overflowing slides */
+  position: relative;
+}
+
+.gallery-container .gallery-inner {
+  display: flex;
+  width: 100%;
+  animation: slide 20s infinite linear; /* Adjust timing for desired speed */
+}

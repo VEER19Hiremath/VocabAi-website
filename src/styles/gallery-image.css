@@ -29,8 +29,10 @@
 /* Responsive image styling */
 .img-responsive {
   width: 100%;
-  height: 500px;
+  height: 900px;
   display: block;
   border-radius: 8px; /* Match border radius with portfolio item */
 }
+
+
   
