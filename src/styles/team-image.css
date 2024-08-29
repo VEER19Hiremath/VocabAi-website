@@ -1,75 +1,102 @@
-/* Ensure uniform size for team containers */
-.team-thumbnail {
-  position: relative; /* Position relative for absolute positioning of caption */
-  border: 2px solid #ddd; /* Border color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  overflow: hidden; /* Hide overflow to maintain rounded corners */
-  display: flex; /* Use Flexbox for centering content */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  width: 100%; /* Ensure full width within column */
-  height: 300px; /* Initial fixed height */
-  padding: 10px; /* Add padding to create space between image and border */
-  box-sizing: border-box; /* Include padding in the height and width calculations */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+/* Container to hold all team images */
+.team-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust height to ensure all images fit */
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden; /* Ensure images don't overflow the container */
 }
 
-.team-thumbnail:hover {
-  height: 300px; /* Expanded height on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+/* Styling for the central image */
+.center-thumbnail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 200px; /* Adjusted size for the central image */
+  height: 240px;
+  transition: all 0.3s ease;
 }
 
-.team-img {
-  width: 100%; /* Ensure image covers the thumbnail */
-  height: 100%; /* Fill the container's height */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  transition: opacity 0.3s ease; /* Smooth transition for image visibility */
+.center-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.team-thumbnail:hover .team-img {
-  opacity: 0.5; /* Dim image on hover */
+/* Hover effect for the central image */
+.center-thumbnail:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* Styling for surrounding images */
+.surrounding-thumbnail {
+  position: absolute;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 150px; /* Smaller sizes for surrounding images */
+  height: 180px;
+  transition: all 0.3s ease;
+}
+
+.surrounding-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover effect for surrounding images */
+.surrounding-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Common styling for team captions */
 .team-caption {
-  position: absolute; /* Absolute positioning within the container */
-  bottom: 0; /* Align caption to the bottom of the container */
-  left: 0; /* Align caption to the left edge of the container */
-  right: 0; /* Align caption to the right edge of the container */
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  color: #888; /* Text color */
-  padding: 15px; /* Padding inside the caption */
-  text-align: center; /* Center align text */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth transition for caption visibility */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  color: #888;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.team-thumbnail:hover .team-caption {
-  opacity: 1; /* Show caption on hover */
+.thumbnail:hover .team-caption {
+  opacity: 1;
 }
 
 .team-name {
-  font-weight: bold; /* Bold text */
-  margin: 0; /* Remove margin */
+  font-weight: bold;
+  margin: 0;
 }
 
 .team-job {
-  font-weight: bold; /* Bold text */
-  color: #555; /* Subtle color for job title */
-  margin: 0; /* Remove margin */
+  font-weight: bold;
+  color: #555;
+  margin: 0;
 }
 
+/* General styles for the team section */
 #team {
   padding: 100px 0;
 }
 
 #team h2 {
-  margin-bottom: 30px; /* Space below heading */
+  margin-bottom: 30px;
 }
 
-#team .thumbnail {
+.thumbnail {
   background: transparent;
   border: 0;
 }

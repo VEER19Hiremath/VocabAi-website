@@ -4,9 +4,9 @@ import "../styles/header.css";
 export const Header = (props) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    '../img/intro-bg.jpg',
-    '../img/intro-bg-2.jpg',
-    '../img/intro-bg-3.jpg'
+    '../img/main_image_1.jpg',
+    '../img/main_image_2.jpeg',
+    '../img/intro-bg-2.jpg'
 
   ];
 

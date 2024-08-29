@@ -4,14 +4,16 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px; /* Optional: Match border radius with slideshow */
-  border: 2px solid #ddd; /* Optional: Adjust border color */
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  height: 100%;
 }
 
 /* Styling for the hover background */
 .hover-bg {
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 /* Styling for the hover text */
@@ -20,7 +22,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -29,10 +31,8 @@
 /* Responsive image styling */
 .img-responsive {
   width: 100%;
-  height: 900px;
+  height: auto; /* Auto height to maintain aspect ratio */
   display: block;
-  border-radius: 8px; /* Match border radius with portfolio item */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image covers the entire area */
 }
-
-
-  

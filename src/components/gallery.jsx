@@ -13,7 +13,7 @@ export const Gallery = (props) => {
         <div className="gallery-container">
           <div className="gallery-inner">
             {props.data
-              ? props.data.map((d, i) => (
+              ? props.data.concat(props.data).map((d, i) => (
                   <div
                     key={`${d.title}-${i}`}
                     className="gallery-slide"
