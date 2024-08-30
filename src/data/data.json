@@ -116,6 +116,11 @@
   ],
   "Team": [
     {
+      "img": "img/team/deepaksir.jpeg",
+      "name": "Depak KT",
+      "job": "Founder"
+    },
+    {
       "img": "img/team/rsp.png",
       "name": "RSP",
       "job": "Fulll Time CSO"
