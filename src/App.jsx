@@ -14,7 +14,7 @@ import { Contact } from "./components/contact";
 import { TextAnalytics } from "./components/textAnalytics"; // Import the new component
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
-
+import { ImageAnalytics } from "./components/imageAnalytics";
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -63,7 +63,11 @@ const App = () => {
           />
           <Route
             path="/text-analytics-demo"
-            element={<TextAnalytics data={landingPageData.Video} />}
+            element={<TextAnalytics data={landingPageData.Text_Analytics} />}
+          />
+           <Route
+            path="/image-analytics-demo"
+            element={<ImageAnalytics data={landingPageData.Image_Analytics} />}
           />
         </Routes>
         <Contact data={landingPageData.Contact} />

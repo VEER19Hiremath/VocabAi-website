@@ -182,9 +182,13 @@
     }
 
   ],
-  "Video": {
+  "Text_Analytics": {
     "src": "video/text-analytics.mp4",
     "description": "In this demo, we showcase how text analytics can be used to extract meaningful insights from textual data, identify key trends, and improve customer experiences through advanced text mining techniques."
+  },
+  "Image_Analytics": {
+    "src": "video/image-analytics.mp4",
+    "description": "Image analytics provides insights into visual content by identifying patterns and objects. It uses machine learning algorithms to process images and extract meaningful information. This technology is commonly used in various applications such as security, healthcare, and retail."
   },
   "Contact": {
     "address": "Vocab.AI Private Limited, #19/3, 3rd Floor Srinivasa Industrial Estate, Kanakapura Main Road, Konanakunte Post, Bengaluru – 56062, www.wyzmindz.com ",

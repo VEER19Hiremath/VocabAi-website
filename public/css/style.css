@@ -8,6 +8,7 @@ html {
   width: 100% !important;
   height: 100% !important;
   scroll-behavior: smooth;
+  
 }
 
 h2,
@@ -17,7 +18,7 @@ h4 {
 }
 h2 {
   text-transform: uppercase;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   font-weight: 800;
   font-size: 36px;
   color: #333;
