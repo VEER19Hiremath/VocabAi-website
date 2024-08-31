@@ -1,24 +1,29 @@
-/* gallery.css */
-
 /* Container for the slideshow */
 .gallery-container {
   overflow: hidden;
-  width: 100%;
+  width: 100vw; /* Full width of the viewport */
+  height: auto; /* Full height of the viewport */
   position: relative;
-  height: 300px; /* Adjust the height according to your images */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
 /* Inner container to hold all slides */
 .gallery-inner {
   display: flex;
-  animation: scroll 30s linear infinite; /* Animation for sliding effect */
+  animation: scroll 20s linear infinite; /* Animation for sliding effect */
+  width: calc(100vw * 2); /* Double the viewport width to allow sliding from right to left */
+  animation-play-state: running; /* Default animation state is running */
 }
 
 /* Individual slide styling */
 .gallery-slide {
   flex: 0 0 auto;
-  width: 300px; /* Fixed width for the images */
+  width: 400px; /* Adjusted width for smaller cards */
+  height: 400px; /* Adjusted height for smaller cards */
   padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
 }
 
 /* Add borders and radius to images */
@@ -26,8 +31,19 @@
   border: 2px solid #ddd;
   border-radius: 8px;
   width: 100%;
-  height: auto;
+  height: 100%; /* Ensure the image takes up the full height of the container */
   object-fit: cover; /* Ensures the image covers the entire area */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect on individual slide */
+.gallery-slide:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Hover effect on images */
+.gallery-slide:hover img {
+  border-color: #007bff; /* Change border color on hover */
 }
 
 /* Keyframes for sliding animation */
@@ -36,6 +52,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50vw); /* Move by half of the total width to slide fully across the screen */
   }
 }
