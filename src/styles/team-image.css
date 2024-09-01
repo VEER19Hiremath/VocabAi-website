@@ -1,91 +1,54 @@
 /* Container to hold all team images */
 .team-container {
   position: relative;
-  width: 100%;
+  width: 1250px;
   height: 1000px; /* Adjust height to accommodate all images */
   margin: 0 auto;
   border: 2px solid #8B4513; /* Wooden frame color */
   border-radius: 12px;
   overflow: hidden; /* Ensure images don't overflow the container */
-  background-color: #f9f4e7; /* Light background to enhance wooden frame effect */
+  background-color: #e6e9ed; /* Light background to enhance wooden frame effect */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Center image styling */
-.center-thumbnail {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 6px solid #8B4513; /* Wooden frame border */
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  width: 220px; /* Larger size for the central image */
-  height: 260px;
-  transition: all 0.3s ease;
-}
-
-.center-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Hover effect for the center image */
-.center-thumbnail:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Position all images in the center of the container */
+/* Common thumbnail styling for all images (center, surrounding, and edge) */
 .thumbnail {
-  position: absolute;
-}
-
-/* Styling for surrounding images */
-.surrounding-thumbnail {
   position: absolute;
   border: 4px solid #8B4513; /* Wooden frame border */
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  /* margin: 10px; Add margin for spacing */
+  overflow: hidden; /* Ensure image and caption stay within the border */
 }
 
+/* Hover effect for all images */
+.thumbnail:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail:hover .team-caption {
+  opacity: 1; /* Show caption on hover */
+  transform: translateY(0); /* Move caption up to be visible */
+}
+
+/* Styling for the images within the thumbnails */
 .team-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Hover effect for surrounding images */
-.surrounding-thumbnail:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+/* Center image specific styling */
+.center-thumbnail {
+  width: 220px; /* Larger size for the central image */
+  height: 260px;
 }
 
-/* Styling for edge images */
-.edge-thumbnail {
-  position: absolute;
-  border: 4px solid #8B4513; /* Wooden frame border */
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-
-.edge-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Hover effect for edge images */
-.edge-thumbnail:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
+/* Styling for surrounding and edge images */
+/* Sizes are handled dynamically in JS as per your layout */
 
 /* Common styling for team captions */
 .team-caption {
@@ -97,14 +60,12 @@
   color: #333;
   padding: 10px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(100%); /* Move below the image */
 }
 
-.thumbnail:hover .team-caption {
-  opacity: 1;
-}
-
+/* Styling for the team name and job */
 .team-name {
   font-weight: bold;
   margin: 0;

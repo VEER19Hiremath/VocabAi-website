@@ -11,21 +11,21 @@ export const Team = (props) => {
 
   // Define different sizes for surrounding and edge images
   const surroundingSizes = [
-    { width: '100px', height: '150px' },
-    { width: '120px', height: '135px' },
+    { width: '150px', height: '200px' },
+    { width: '180px', height: '200px' },
     { width: '140px', height: '205px' },
-    { width: '110px', height: '140px' },
-    { width: '130px', height: '90px' },
+    { width: '160px', height: '210px' },
+    { width: '180px', height: '160px' },
     { width: '150px', height: '220px' },
-    { width: '120px', height: '120px' },
+    { width: '190px', height: '180px' },
     { width: '160px', height: '210px' },
   ];
 
   const edgeSizes = [
-    { width: '150px', height: '180px' },
-    { width: '160px', height: '200px' },
-    { width: '130px', height: '160px' },
-    { width: '140px', height: '170px' },
+    { width: '150px', height: '190px' },
+    { width: '160px', height: '190px' },
+    { width: '220px', height: '180px' },
+    { width: '160px', height: '210px' },
   ];
 
   // Calculate positions in a circular pattern around the center
@@ -39,7 +39,7 @@ export const Team = (props) => {
 
   // Calculate positions for edge images
   const edgePositions = [
-    { top: '300px', left: '90%', transform: 'translateX(-50%)' }, // Top edge
+    { top: '30  0px', left: '90%', transform: 'translateX(-50%)' }, // Top edge
     { bottom: '-1px', left: '12%', transform: 'translateX(-50%)' }, // Bottom edge
     { left: '50px', top: '30%', transform: 'translateY(-50%)' }, // Left edge
     { right: '30px', top: '80%', transform: 'translateY(-50%)' }, // Right edge
