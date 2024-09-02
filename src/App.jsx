@@ -6,7 +6,7 @@ import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
+import { Gallery } from "./components/gallery_images";
 import { Demo } from "./components/demo";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
@@ -48,7 +48,7 @@ const App = () => {
                   <Services data={landingPageData.Services} />
                 </Element>
                 <Element name="images">
-                  <Gallery data={landingPageData.Gallery} />
+                  <Gallery data={landingPageData.Gallery_Photos} />
                 </Element>
                 {/* <Element name="testimonials">
                   <Testimonials data={landingPageData.Testimonials} />
