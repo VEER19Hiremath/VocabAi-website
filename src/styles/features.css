@@ -1,105 +1,129 @@
-.feature-box {
-  margin-bottom: 30px; /* Space between rows */
+.features-title-container {
+  text-align: center; /* Center align the title */
+  margin-top: 50px;
+  /* margin-bottom: 5px; Space between title and content */
 }
 
-.feature-content {
-  background-color: #fff; /* Background color */
-  border: 2px solid #007bff; /* Updated border color */
-  border-radius: 12px; /* Increased rounded corners */
-  padding: 20px; /* Padding inside the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  text-align: center; /* Center text */
-  overflow: hidden; /* Hide text initially */
-  position: relative; /* Ensure text positioning */
-  width: 380px; /* Initial width */
-  height: 400px; /* Initial height */
-  margin: 0 auto; /* Center the box */
+.features-title {
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Bold font for title */
+  position: relative; /* Position for the underline */
 }
 
-.feature-content.expanded {
-  width: auto; /* Allow width to expand based on content */
-  max-width: 500px; /* Maximum width when expanded */
-  height: 780px; /* Height will adjust based on content */
+.features-title::after {
+  content: ''; /* No content, just for styling */
+  display: block;
+  width: 100px; /* Underline width */
+  height: 4px; /* Underline thickness */
+  background: #007bff; /* Underline color */
+  margin: 10px auto 0; /* Center the underline and space from the text */
+  border-radius: 2px; /* Rounded edges for the underline */
 }
 
-.feature-content i {
-  font-size: 38px; /* Icon size */
-  color: #333; /* Icon color */
-  margin-bottom: 15px; /* Space between icon and title */
-  transition: all 0.3s ease; /* Smooth transition for icon */
+
+.features-section {
+  padding: 60px 20px; /* Increased padding around the entire section */
+  background-color: #f1f1f1; /* Light background color for the section */
 }
 
-.feature-content h3 {
-  font-weight: bold; /* Bold title */
-  margin-top: 0; /* Remove top margin */
-  margin-bottom: 10px; /* Adjust bottom margin */
-  transition: all 0.3s ease; /* Smooth transition for title */
+.features-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1500px; /* Adjust based on your design */
+  margin: 0 auto; /* Centering the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: #ffffff; /* White background color for the container */
+  border-radius: 12px; /* Rounded corners for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
 }
 
-.feature-content p {
-  color: #555; /* Subtle color for text */
-  margin-top: 10px; /* Add space above text */
-  font-size: 16px; /* Text size */
-  line-height: 1.5; /* Line height for better readability */
-  max-height: 6em; /* Limit visible lines initially */
-  overflow: hidden; /* Hide text overflow */
-  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+.features-image {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 12px; /* Match border-radius with the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for image */
 }
 
-.feature-content.expanded p {
-  max-height: none; /* Show all text when expanded */
-  overflow: visible; /* Allow overflow when expanded */
+.features-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-content:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-  transform: translateY(-5px); /* Slight lift effect */
-  background-color: #f0f8ff; /* Change background color on hover */
-  border: 2px solid #0056b3; /* Darker border on hover */
+.features-image:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
-.feature-content:hover i {
-  font-size: 42px; /* Increase icon size on hover */
-  margin-bottom: 5px; /* Decrease space between icon and title */
-  color: #0056b3; /* Change icon color on hover */
+.features-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.feature-content:hover h3 {
-  font-size: 24px; /* Increase title size on hover */
-  color: #0056b3; /* Change title color on hover */
+.feature-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.toggle-btn {
-  position: absolute;
-  bottom: 10px; /* Adjusted to be closer to the bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 5px;
+.feature-item:hover {
+  border-color: #007bff; /* Darken border color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: scale(1.03); /* Slightly enlarge item on hover */
+}
+
+.feature-icon {
+  font-size: 35px;
+  color: #007bff;
+  margin-right: 20px;
+}
+
+.feature-info {
+  flex: 1;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+}
+
+.feature-text.expanded {
+  max-height: 500px; /* Adjust based on your content */
+  opacity: 1;
+}
+
+.expand-collapse-btn {
+  font-size: 15px;
+  margin-top: 10px;
+  /* background-color: #007bff; */
+  color: rgb(26, 48, 221);
   border: none;
-  background: none;
+  border-radius: 5px;
+  padding: 10px;
   cursor: pointer;
-  font-size: 18px; /* Decreased icon size */
-  color: #007bff; /* Icon color */
+  transition: background-color 0.3s ease;
 }
 
-.toggle-btn:hover {
-  color: #0056b3; /* Change color on hover */
+.expand-collapse-btn:hover {
+  background-color: #a8c5e6;
 }
 
-#features {
-  padding-top: 5%;
-  background: #f6f6f6;
-}
-
-#features i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}

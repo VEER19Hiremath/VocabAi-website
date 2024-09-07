@@ -1,46 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/features.css"; // Import the CSS file for custom styling
+import { FeatureItem } from "./feature_item"; // Corrected import
 
 export const Features = (props) => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const handleToggleClick = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
-  };
+  // Default to empty array if props.data is undefined
+  const featuresData = props.data || [];
 
   return (
-    <div id="features" className="text-center">
-      <div className="container">
-        <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Features</h2>
-        </div>
-        <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div
-                  key={`${d.title}-${i}`}
-                  className="col-xs-12 col-sm-6 col-md-4 feature-box"
-                >
-                  <div
-                    className={`feature-content ${expandedIndex === i ? 'expanded' : ''}`}
-                  >
-                    <i className={d.icon}></i>
-                    <h3>{d.title}</h3>
-                    <p>{d.text}</p> {/* Display text */}
-                    <div
-                      className="toggle-btn"
-                      onClick={() => handleToggleClick(i)}
-                    >
-                      {expandedIndex === i ? (
-                        <i className="fa fa-chevron-up"></i> // Up arrow icon
-                      ) : (
-                        <i className="fa fa-chevron-down"></i> // Down arrow icon
-                      )}
-                    </div>
-                  </div>
-                </div>
+    <div>
+      <div className="features-title-container">
+        <h1 className="features-title">Features</h1>
+      </div>
+      <div className="features-section" id="features">
+        <div className="features-container">
+          <div className="features-image">
+            <img src="../img/features-image.jpg" alt="Features" />
+          </div>
+          <div className="features-content">
+            {featuresData.length > 0 ? (
+              featuresData.map((feature, index) => (
+                <FeatureItem
+                  key={index}
+                  icon={feature.icon}
+                  title={feature.title}
+                  text={feature.text}
+                />
               ))
-            : "Loading..."}
+            ) : (
+              <p>No features available.</p> // Handling case when there is no data
+            )}
+          </div>
         </div>
       </div>
     </div>
