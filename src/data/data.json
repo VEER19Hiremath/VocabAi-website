@@ -31,18 +31,8 @@
     },
     {
       "title": "Audio Analytics",
-      "largeImage": "img/portfolio/audio_analytics_2.jpeg",
-      "smallImage": "img/portfolio/audio_analytics_2.jpeg"
-    },
-    {
-      "title": "Audio Analytics",
-      "largeImage": "img/portfolio/audio_analytics_2.jpeg",
-      "smallImage": "img/portfolio/audio_analytics_2.jpeg"
-    },
-    {
-      "title": "Analytics",
-      "largeImage": "img/portfolio/data_analytics_1.jpeg",
-      "smallImage": "img/portfolio/data_analytics_1.jpeg"
+      "largeImage": "img/portfolio/audio_analytics_1.jpg",
+      "smallImage": "img/portfolio/audio_analytics_1.jpg"
     },
     {
       "title": "Analytics",
@@ -50,19 +40,9 @@
       "smallImage": "img/portfolio/Data_Analytics_2.png"
     },
     {
-      "title": "Analytics",
-      "largeImage": "img/portfolio/data_analytics_3.jpg",
-      "smallImage": "img/portfolio/data_analytics_3.jpg"
-    },
-    {
-      "title": "Analytics",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Analytics",
+      "title": "Image Analytics",
       "largeImage": "img/portfolio/image_analytics_1.jpg",
-      "smallImage": "img/image_analytics_1.jpg"
+      "smallImage": "img/portfolio/image_analytics_1.jpg"
     }
   ],
   "Services": [
