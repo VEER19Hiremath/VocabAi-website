@@ -4,7 +4,7 @@ import '../styles/services.css'; // Ensure the path to your CSS file is correct
 export const Services = (props) => {
   return (
     <div id="services" className="text-center">
-      <div className="container">
+      <div className="main-container">  {/* Main container */}
         <div className="section-title">
           <h2>Our Services</h2>
           <p>Services by Vocab.AI</p>

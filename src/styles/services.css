@@ -2,6 +2,12 @@
   padding: 60px 0; /* Space around the section */
 }
 
+.main-container {
+  max-width: 1200px; /* Max width for the main container */
+  margin: 0 auto; /* Center the main container */
+
+}
+
 .section-title {
   margin-bottom: 40px; /* Space below the title */
 }
@@ -26,7 +32,7 @@
   transition: all 0.3s ease; /* Smooth transition for hover effect */
   text-align: center; /* Center align text */
   width: 350px; /* Fixed width for uniformity */
-  height: 500px; /* Fixed height for uniformity */
+  height: 550px; /* Fixed height for uniformity */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
@@ -34,8 +40,9 @@
 }
 
 .service-card:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Increased shadow on hover */
-  transform: translateY(-5px); /* Slight lift effect */
+  background-color: #2a2a2a; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Increased shadow on hover */
 }
 
 .service-icon {
@@ -47,12 +54,16 @@
 .service-desc h3 {
   font-weight: bold; /* Bold service name */
   margin-bottom: 10px; /* Space below the name */
+  transition: font-size 0.3s ease; /* Smooth transition for font size */
+}
+
+.service-card:hover .service-desc h3 {
+  font-size: 24px; /* Increase title size on hover */
 }
 
 .service-desc p {
   color: #555; /* Text color */
 }
-
 
 #services {
   padding: 100px 0;
