@@ -1,7 +1,7 @@
 /* Container to hold all team images */
 .team-container {
   position: relative;
-  width: 1250px;
+  width: 1200px;
   height: 950px; /* Adjust height to accommodate all images */
   margin: 0 auto;
   border: 2px solid #8B4513; /* Wooden frame color */

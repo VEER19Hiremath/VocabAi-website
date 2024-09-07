@@ -47,7 +47,7 @@ const App = () => {
                 <Element name="services">
                   <Services data={landingPageData.Services} />
                 </Element>
-                <Element name="images">
+                <Element name="portfolio">
                   <Gallery data={landingPageData.Gallery_Photos} />
                 </Element>
                 {/* <Element name="testimonials">

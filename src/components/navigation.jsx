@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";  // Import Link from react-scroll
-import '../styles/navigation.css'
+import '../styles/navigation.css';
 
 export const Navigation = (props) => {
   const navigate = useNavigate();
@@ -18,6 +18,9 @@ export const Navigation = (props) => {
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
+          <a className="navbar-brand page-scroll" href="#page-top">
+            <img src="/img/logo.png" alt="Logo" className="logo" />
+          </a>
           <button
             type="button"
             className="navbar-toggle collapsed"
@@ -29,13 +32,10 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            <img src="/img/logo.png" alt="Logo" className="logo" style={{ maxHeight: '50px', marginRight: '10px' }} /> 
-          </a>
         </div>
 
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav navbar-right">
+          <ul className="nav navbar-nav navbar-left"> {/* Changed navbar-right to navbar-left */}
             <li>
               <ScrollLink
                 to="features"
@@ -70,22 +70,23 @@ export const Navigation = (props) => {
               </ScrollLink>
             </li>
             <li className="dropdown">
-              <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                Demo <b className="caret"></b>
-              </a>
-              <ul className="dropdown-menu">
-                <li><Link to="/text-analytics-demo">Text Analytics Demo</Link></li>
-                <li><Link to="/image-analytics-demo">Image Analytics Demo</Link></li>
-                <li><Link to="/speech-emotions-demo">Speech Emotions Demo</Link></li>
-              </ul>
-            </li>
+            <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+              Demo <b className="caret"></b> {/* The caret will stay here */}
+            </a>
+            <ul className="dropdown-menu">
+              <li><Link to="/text-analytics-demo">Text Analytics Demo</Link></li>
+              <li><Link to="/image-analytics-demo">Image Analytics Demo</Link></li>
+              <li><Link to="/speech-emotions-demo">Speech Emotions Demo</Link></li>
+            </ul>
+          </li>
+
             <li>
               <ScrollLink
-                to="images"
+                to="portfolio"
                 smooth={true}
                 duration={1000}
                 className="page-scroll"
-                onClick={() => handleNavigation("images")}
+                onClick={() => handleNavigation("portfolio")}
               >
                 Gallery
               </ScrollLink>

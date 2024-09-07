@@ -1,22 +1,54 @@
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 10px 0;
   transition: all 0.8s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Background color of navbar */
 }
 
 #menu.navbar-default {
-  background-color: #fff; /* Background color of navbar */
   border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to navbar */
 }
 
-#menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
+#menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu .navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+#menu .navbar-header .navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+#menu .navbar-header .navbar-brand img {
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+#menu .navbar-header .navbar-toggle {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+}
+
+#menu .navbar-header .navbar-toggle .icon-bar {
+  background-color: #333; /* Color of hamburger icon bars */
+}
+
+#menu.navbar-default .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+#menu.navbar-default .navbar-nav > li {
+  margin: 0 10px; /* Adjust spacing between menu items */
 }
 
 #menu.navbar-default .navbar-nav > li > a {
@@ -25,11 +57,10 @@
   color: #555;
   font-size: 15px;
   font-weight: 400;
-  padding: 10px 15px; /* Increase padding for better touch area */
+  padding: 10px 15px;
   border-radius: 4px;
-  margin: 0 15px;
   position: relative;
-  transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+  transition: color 0.3s, background-color 0.3s;
 }
 
 #menu.navbar-default .navbar-nav > li > a:hover,
@@ -56,52 +87,66 @@
   width: 100%;
 }
 
-.navbar-toggle {
-  border-radius: 4px; /* Match rounded corners of nav items */
+/* Dropdown Position Adjustment */
+#menu.navbar-default .navbar-nav > li.dropdown {
+  position: relative;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #f8f8f8;
-  border-color: #ddd;
+#menu.navbar-default .navbar-nav .dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #333; /* Color of hamburger icon bars */
-}
-
-.dropdown-menu {
-  background-color: #fff;
+#menu.navbar-default .dropdown-menu {
+  background-color: #e9eaf0; /* Background color of dropdown */
   border: 1px solid rgba(231, 231, 231, 0.5);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  width: 200px; /* Increased width */
 }
 
-.dropdown-menu > li > a {
-  color: #555;
-  padding: 10px 15px;
+#menu.navbar-default .dropdown-menu > li {
+  margin: 5px 0;
+}
+
+#menu.navbar-default .dropdown-menu > li > a {
+  color: #131212; /* Text color inside dropdown */
+  padding: 8px 15px;
   font-size: 14px;
+  border-radius: 4px;
   transition: background-color 0.3s;
 }
 
-.dropdown-menu > li > a:hover {
-  background-color: #f1f1f1;
-  color: #333;
+#menu.navbar-default .dropdown-menu > li > a:hover {
+  background-color: #4cb5cf; /* Hover background color inside dropdown */
+  color: #fff;
 }
 
-.dropdown-menu > li > a:focus {
-  outline: none;
+/* Adjusting the caret to the right of the "Demo" text */
+#menu.navbar-default .navbar-nav > li.dropdown > a .caret {
+  margin-left: 5px;  /* Space between text and caret */
+  display: inline-block;  /* Ensures caret is aligned with text */
+  vertical-align: middle;  /* Aligns caret vertically with the text */
+  /* margin-bottom: 0;  Removes the bottom margin to align it properly */
 }
 
-.navbar-nav .dropdown:hover > .dropdown-menu {
-  display: block;
+@media (max-width: 768px) {
+  #menu .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu .navbar-nav > li {
+    margin: 10px 0;
+  }
 }
-
-.navbar-nav .dropdown:hover > a {
-  color: #6372ff; /* Change color of dropdown link on hover */
-}
-
-
-
-
-
-
