@@ -198,21 +198,22 @@
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
-  "Features": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Text Analytics",
-      "text": "Text analytics is revolutionising business worldwide by unlocking valuable insights from unstructured data, such as customer feedback, social media posts, and product reviews. By leveraging natural language processing (NLP) and machine learning algorithms, we are helping our clients to identify trends, sentiment, and patterns, enabling data-driven decision-making. Our area of expertise is towards improving the customer experience while they visit our clients with their queries. Our tools are helping businesses to enhance their operational efficiency, drive innovation, and gain a competitive edge in the global market."
-    },
-    {
-      "icon": "fa fa-chart-bar",
-      "title": "Audio Analytics",
-      "text": "Audio analytics is transforming business worldwide by uncovering hidden insights from audio data, such as customer calls, voice assistants, and ambient noise. Our solutions in the area of speech recognition, machine learning, and natural language processing techniques, help our clients analyse and understand vast amounts of audio information, leading to improved customer service, enhanced operational efficiency, and innovative product development. Our audio analytics tools are being used across call centres to detect customer sentiments, and other linguistic and paralinguistic information, enabling businesses to make data-driven decisions, drive growth, and stay ahead of the competition."
-    },
-    {
-      "icon": "fa fa-smile",
-      "title": "Image Analytics",
-      "text": " Image analytics is revolutionising business worldwide by extracting valuable insights from image data. Our image analytics solutions leverage computer vision, machine learning, and deep learning algorithms, and analyse and understand visual content, enabling applications like object detection, facial recognition, and Barcode and LCD/LED panel information extraction. Using such tools, it is possible for our clients to ensure an improved customer experience while remotely assessing the performance of their executives. Our clients mostly use image analytics to analyse the quality of service being provided by service technicians while installing several appliances. As image analytics continues to advance, it is poised to unlock new opportunities and transform the services and customer experience."
-    }
-  ]
-}
+    "Features": [
+      {
+        "icon": "fa fa-file-text",
+        "title": "Text Analytics",
+        "text": "Text analytics is revolutionising business worldwide by unlocking valuable insights from unstructured data, such as customer feedback, social media posts, and product reviews. By leveraging natural language processing (NLP) and machine learning algorithms, we are helping our clients to identify trends, sentiment, and patterns, enabling data-driven decision-making. Our area of expertise is towards improving the customer experience while they visit our clients with their queries. Our tools are helping businesses to enhance their operational efficiency, drive innovation, and gain a competitive edge in the global market."
+      },
+      {
+        "icon": "fa fa-microphone",
+        "title": "Audio Analytics",
+        "text": "Audio analytics is transforming business worldwide by uncovering hidden insights from audio data, such as customer calls, voice assistants, and ambient noise. Our solutions in the area of speech recognition, machine learning, and natural language processing techniques, help our clients analyse and understand vast amounts of audio information, leading to improved customer service, enhanced operational efficiency, and innovative product development. Our audio analytics tools are being used across call centres to detect customer sentiments, and other linguistic and paralinguistic information, enabling businesses to make data-driven decisions, drive growth, and stay ahead of the competition."
+      },
+      {
+        "icon": "fa fa-image",
+        "title": "Image Analytics",
+        "text": "Image analytics is revolutionising business worldwide by extracting valuable insights from image data. Our image analytics solutions leverage computer vision, machine learning, and deep learning algorithms, and analyse and understand visual content, enabling applications like object detection, facial recognition, and Barcode and LCD/LED panel information extraction. Using such tools, it is possible for our clients to ensure an improved customer experience while remotely assessing the performance of their executives. Our clients mostly use image analytics to analyse the quality of service being provided by service technicians while installing several appliances. As image analytics continues to advance, it is poised to unlock new opportunities and transform the services and customer experience."
+      }
+    ]
+  }
+  
