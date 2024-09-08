@@ -1,10 +1,21 @@
 /* Container to hold all team images */
+#main-team-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1500px; /* Adjust based on your design */
+  margin: 0 auto; /* Centering the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: #ffffff; /* White background color for the container */
+  border-radius: 12px; /* Rounded corners for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
 .team-container {
   position: relative;
-  width: 1200px;
+  width: 1360px;
   height: 950px; /* Adjust height to accommodate all images */
   margin: 0 auto;
-  border: 2px solid #8B4513; /* Wooden frame color */
   border-radius: 12px;
   overflow: hidden; /* Ensure images don't overflow the container */
   background-color: #ddedf0; /* Light background to enhance wooden frame effect */
@@ -16,7 +27,8 @@
 /* Common thumbnail styling for all images (center, surrounding, and edge) */
 .thumbnail {
   position: absolute;
-  border: 4px solid #8B4513; /* Wooden frame border */
+  border: 12px solid transparent; /* Create space for the wooden frame */
+  border-image: url('../img/frame.png') 30 round; /* Add realistic wooden frame */
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
@@ -38,7 +50,7 @@
 .team-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
 }
 
 /* Center image specific styling */
@@ -46,9 +58,6 @@
   width: 220px; /* Larger size for the central image */
   height: 260px;
 }
-
-/* Styling for surrounding and edge images */
-/* Sizes are handled dynamically in JS as per your layout */
 
 /* Common styling for team captions */
 .team-caption {
@@ -58,7 +67,7 @@
   right: 0;
   background: rgba(255, 255, 255, 0.8);
   color: #333;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -84,4 +93,10 @@
 
 #team h2 {
   margin-bottom: 10px;
+  /* font-size: 2.5rem; */
+  /* font-weight: bold; */
+  text-align: center; /* Center the heading */
+  margin-left: 200px;
+  color: #333;
+  text-transform: uppercase;
 }

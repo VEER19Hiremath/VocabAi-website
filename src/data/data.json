@@ -35,9 +35,19 @@
       "smallImage": "img/portfolio/audio_analytics_1.jpg"
     },
     {
-      "title": "Analytics",
+      "title": "Data Analytics",
       "largeImage": "img/portfolio/Data_Analytics_2.png",
       "smallImage": "img/portfolio/Data_Analytics_2.png"
+    },
+    {
+      "title": "Analytics",
+      "largeImage": "img/portfolio/data_analytics_3.jpg",
+      "smallImage": "img/portfolio/data_analytics_3.jpg"
+    },
+    {
+      "title": "Analytics",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
     },
     {
       "title": "Image Analytics",

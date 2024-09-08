@@ -46,7 +46,8 @@ export const Team = (props) => {
   ];
 
   return (
-    <div id="team" className="text-center">
+    <div id ="main-team-container">
+      <div id="team" className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Meet the Team</h2>
@@ -100,5 +101,8 @@ export const Team = (props) => {
         </div>
       </div>
     </div>
-  );
+
+
+    </div>
+      );
 };
