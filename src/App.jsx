@@ -41,7 +41,7 @@ const App = () => {
                 <Element name="features">
                   <Features data={landingPageData.Features} />
                 </Element>
-                <Element name="about">
+                <Element name="why-choose-us-container">
                   <About data={landingPageData.About} />
                 </Element>
                 <Element name="services">

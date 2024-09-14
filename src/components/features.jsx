@@ -23,7 +23,7 @@ export const Features = (props) => {
   }, [images.length]);
 
   return (
-    <div>
+    <div className="features-section-container">
       <div className="features-title-container">
         <h1 className="features-title">Features</h1>
       </div>

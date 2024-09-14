@@ -58,17 +58,17 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-image",
+      "image": "img/portfolio/image_analytics_1.jpg",
       "name": "Image analytics",
       "text": "Vocab.AI offers AI-powered image analytics tools to streamline quality assurance for clients managing large service technician teams. These tools automate the review of images taken during onsite tasks, replacing the slow and subjective manual auditing process. By quickly analyzing large volumes of images, our solutions improve accuracy and efficiency while reducing costs."
     },
     {
-      "icon": "fa fa-microphone",
+      "image": "img/portfolio/audio_analytics_1.jpg",
       "name": "Audio Sentiment Analytics",
       "text": "Audio sentiment analytics revolutionizes customer care by analyzing voice tone, pitch, and language in customer calls to uncover deeper emotions and concerns. This enables companies to pinpoint frustration points, assess agent performance, and detect churn risks early. With these insights, businesses can enhance training, improve support processes, and empower agents to deliver more empathetic and personalized customer experiences."
     },
     {
-      "icon": "fa fa-file-text",
+      "image": "img/portfolio/analytics_1.jpg",
       "name": "Text Analytics",
       "text": "Vocab-AI’s text analytics solutions transform customer-agent interactions by analyzing chat transcripts to measure performance in areas like empathy, greetings, and feedback. Our tools offer feedback and coaching to enhance agent communication and efficiency, while the analytics dashboard provides insights into customer preferences, behavior, and journey mapping. This empowers businesses to optimize support processes and deliver personalized experiences."
     }

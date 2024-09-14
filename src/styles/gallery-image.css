@@ -3,10 +3,11 @@
 /* Styling for the portfolio item */
 .portfolio-item {
   position: relative;
-  overflow:visible;
+  overflow: hidden; /* Ensure image does not overflow the container */
   border-radius: 8px;
   border: 2px solid #ddd;
   height: 100%;
+  margin: 10px; /* Added margin for spacing */
 }
 
 /* Styling for the hover background */
@@ -14,6 +15,7 @@
   position: relative;
   overflow: hidden;
   height: 100%;
+  border-radius: 8px; /* Ensure hover background has rounded corners */
 }
 
 /* Styling for the hover text */
@@ -26,12 +28,18 @@
   color: #fff;
   padding: 10px;
   text-align: center;
+  transition: opacity 0.3s ease; /* Smooth transition for hover text */
+}
+
+/* Hover effect for hover text */
+.hover-bg:hover .hover-text {
+  opacity: 1;
 }
 
 /* Responsive image styling */
 .img-responsive {
   width: 100%;
-  height: auto; /* Auto height to maintain aspect ratio */
+  height: 100%; /* Maintain aspect ratio */
   display: block;
   border-radius: 8px;
   object-fit: cover; /* Ensures the image covers the entire area */

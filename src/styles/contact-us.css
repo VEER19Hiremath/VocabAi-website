@@ -1,6 +1,6 @@
 #contact {
-  padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  padding: 80px 15px;
+  background: linear-gradient(to right, #689dec 0%, #38397b 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -49,7 +49,7 @@
 }
 
 #contact .btn-custom:hover {
-  color: #1f386e;
+  color: #4caf50;
   background: #fff;
 }
 
@@ -114,12 +114,12 @@
 }
 
 #contact .social i.fa:hover {
-  color: #608dfd;
+  color: #4caf50;
   background: #fff;
 }
 
 #footer {
-  padding: 20px 0;
+  padding: 20px 15px;
   background: #1f386e;
   color: #fff;
 }
@@ -131,4 +131,21 @@
 #footer a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  #contact .col-md-8,
+  #contact .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  #contact .social ul {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  #contact .social ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }

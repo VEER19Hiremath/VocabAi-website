@@ -2,7 +2,7 @@
 .gallery-container {
   overflow: hidden;
   width: 100%; /* Full width of the viewport */
-  height: auto; /* Full height of the viewport */
+  height: auto; /* Adjust height based on content */
   position: relative;
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
@@ -19,10 +19,11 @@
 /* Individual slide styling */
 .gallery-slide {
   flex: 0 0 auto;
-  width: 450px; /* Adjusted width for smaller cards */
-  height: 450px; /* Adjusted height for smaller cards */
+  width: 300px; /* Adjusted width for smaller cards */
+  height: 300px; /* Adjusted height for smaller cards */
   padding: 10px;
   box-sizing: border-box;
+  margin: 5px; /* Added margin for spacing */
   transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
 }
 
@@ -38,7 +39,7 @@
 
 /* Hover effect on individual slide */
 .gallery-slide:hover {
-  transform: scale(1.1); /* Scale the image on hover */
+  transform: scale(1.05); /* Slightly scale the image on hover */
 }
 
 /* Hover effect on images */
@@ -54,48 +55,4 @@
   100% {
     transform: translateX(-50vw); /* Move by half of the total width to slide fully across the screen */
   }
-}
-
-/* Portfolio Section */
-
-.portfolio-item .hover-bg {
-  overflow: hidden;
-  position:relative;
-  margin: 0;
-}
-.hover-bg .hover-text {
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
-  );
-  padding: 30% 0 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.5s;
-}
-.hover-bg .hover-text > h4 {
-  opacity: 0;
-  color: #fff;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  transition: all 0.3s;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.hover-bg:hover .hover-text > h4 {
-  opacity: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-.hover-bg:hover .hover-text {
-  opacity: 1;
 }

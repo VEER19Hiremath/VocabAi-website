@@ -49,11 +49,11 @@ export const Navigation = (props) => {
             </li>
             <li>
               <ScrollLink
-                to="about"
+                to="why-choose-us-container"
                 smooth={true}
                 duration={1000}
                 className="page-scroll"
-                onClick={() => handleNavigation("about")}
+                onClick={() => handleNavigation("why-choose-us-container")}
               >
                 About
               </ScrollLink>

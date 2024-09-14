@@ -1,60 +1,62 @@
 .features-title-container {
-  text-align: center; /* Center align the title */
+  text-align: center;
   margin-top: 50px;
-  /* margin-bottom: 5px; Space between title and content */
 }
 
 .features-title {
-  font-size: 2rem; /* Adjust the font size as needed */
-  font-weight: bold; /* Bold font for title */
-  position: relative; /* Position for the underline */
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
 }
 
 .features-title::after {
-  content: ''; /* No content, just for styling */
+  content: '';
   display: block;
-  width: 100px; /* Underline width */
-  height: 4px; /* Underline thickness */
-  background: #007bff; /* Underline color */
-  margin: 10px auto 0; /* Center the underline and space from the text */
-  border-radius: 2px; /* Rounded edges for the underline */
+  width: 100px;
+  height: 4px;
+  background: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
-
 .features-section {
-  padding: 60px 20px; /* Increased padding around the entire section */
-  background-color: #f1f1f1; /* Light background color for the section */
+  padding: 60px 20px;
+  background-color: #f1f1f1;
 }
 
 .features-container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 20px;
-  max-width: 1500px; /* Adjust based on your design */
-  margin: 0 auto; /* Centering the container */
-  padding: 20px; /* Padding inside the container */
-  background-color: #ffffff; /* White background color for the container */
-  border-radius: 12px; /* Rounded corners for the container */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  max-width: 1800px; /* Increased width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .features-image {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 12px; /* Match border-radius with the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .features-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 300px; /* Set uniform height */
+  object-fit: cover; /* Ensures images are cropped to fill the container */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .features-image:hover img {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .features-content {
@@ -76,9 +78,9 @@
 }
 
 .feature-item:hover {
-  border-color: #007bff; /* Darken border color on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-  transform: scale(1.03); /* Slightly enlarge item on hover */
+  border-color: #007bff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
 }
 
 .feature-icon {
@@ -107,14 +109,13 @@
 }
 
 .feature-text.expanded {
-  max-height: 500px; /* Adjust based on your content */
+  max-height: 500px;
   opacity: 1;
 }
 
 .expand-collapse-btn {
   font-size: 15px;
   margin-top: 10px;
-  /* background-color: #007bff; */
   color: rgb(26, 48, 221);
   border: none;
   border-radius: 5px;
@@ -127,35 +128,28 @@
   background-color: #a8c5e6;
 }
 
-.features-image {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  border-radius: 12px;
+@media screen and (min-width: 768px) {
+  .features-container {
+    flex-direction: row;
+  }
+
+  .features-image {
+    flex: 1;
+  }
+
+  .features-content {
+    flex: 2;
+  }
 }
 
-.features-image-slide {
-  width: 100%;
-  height: 33.33%; /* Divides the container into 3 equal parts */
-  object-fit: cover;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
+@media screen and (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    max-width: 100%; /* Full width on small screens */
+  }
 
-.features-image-slide:not(:first-child) {
-  display: none;
-}
-
-/* Handling expanded feature items */
-.feature-text.expanded ~ .features-image {
-  height: 100%;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.features-image:hover img {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  .features-image {
+    width: 100%; /* Full width for images */
+    margin-bottom: 20px;
+  }
 }

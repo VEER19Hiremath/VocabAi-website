@@ -1,14 +1,15 @@
-/* Container wrapping both header and about sections */
+/* General Container for Header and About Sections */
 .header-about-container {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Full viewport height */
   position: relative;
 }
 
+/* Header Section */
 .header-section {
   position: relative;
-  height: 60%; /* Reduced height to accommodate the About Us section */
+  height: 60vh; /* Responsive height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,10 +45,11 @@
   color: #fff;
   text-align: center;
   z-index: 3;
+  padding: 20px; /* Better mobile view */
 }
 
 .intro-text h1 {
-  font-size: 36px;
+  font-size: 2.5rem; /* Responsive font size */
   font-weight: 700;
   margin-bottom: 10px;
   position: relative;
@@ -62,7 +64,7 @@
 }
 
 .intro-text p {
-  font-size: 16px;
+  font-size: 1rem; /* Responsive font size */
   margin-bottom: 20px;
 }
 
@@ -85,50 +87,178 @@
   background-color: #6372ff;
 }
 
-/* About Us Section */
+/* About Section */
 .about-section {
-  background-color: #f8f9fa;
-  height: 40%; /* Take the remaining height */
+  background-color: #dee5ec;
+  height: auto; /* Responsive height */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-left:120px;
-  margin-top: 20px;
-  padding: 20px;
-  z-index: 4; /* Make sure it appears above other content */
+  justify-content: center; /* Center the content vertically */
+  padding: 40px 20px; /* More padding for mobile */
+  z-index: 4;
 }
 
 .about-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Wrap content on smaller screens */
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px; /* Adjust width for centered content */
   margin: 0 auto;
 }
 
 .about-text-container {
-  width: 50%;
-  padding-right: 20px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
 }
 
 .about-text-container h2 {
-  font-size: 26px;
+  font-size: 2rem; /* Responsive font size */
   margin-bottom: 20px;
   color: #333;
 }
 
 .about-only-text {
-  font-size: 14px;
+  font-size: 1rem; /* Responsive font size */
   color: #666;
+  margin-top: 20px;
 }
 
 .about-image-container {
-  width: 40%;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the image */
+}
+
+.about-image-container img {
+  width: 80%; /* Responsive image width */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for About Section */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* Horizontal layout for larger screens */
+    justify-content: space-around; /* Distribute space evenly */
+  }
+
+  .about-text-container {
+    width: 45%; /* Adjust width for text */
+    text-align: left;
+  }
+
+  .about-image-container {
+    width: 45%; /* Adjust width for image */
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 2rem; /* Smaller font on mobile */
+  }
+
+  .btn-custom {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+
+  .about-text-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-image-container img {
+    width: 90%; /* Larger image on mobile */
+  }
+}
+
+/* Container Wrapping Header and About */
+#about-container {
+  max-width: 1400px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0px; /* Remove padding around the container */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Box shadow */
+  background-color: #f9f9f9;
+}
+
+/* About Section Content Styling */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px; /* Space between About and Why Choose Us sections */
+}
+
+.about-text-container {
+  width: 60%; /* Adjust width for text */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  margin-left: -150px;
+  margin-top: 20px;
+  border: 2px solid transparent; /* Transparent border initially */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.about-text-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  border-color: #007bff; /* Change border color on hover */
+}
+
+.about-text-container h2 {
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.about-text-container h2::after {
+  content: "";
+  display: block;
+  width: 80px; /* Length of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #5ca9fb; /* Color of the underline */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about-text-container:hover h2::after {
+  background-color: #6372ff; /* Change color on hover */
+}
+
+.about-only-text {
+  margin-top: 30px;
+  font-size: 18px; /* Increase font size */
+  font-weight: 500; /* Make it a bit bold */
+}
+
+.about-image-container {
+  width: 40%; /* Adjust width for image */
+  margin-left: 15px; /* Space between text and image */
+  border-radius: 8px;
+  margin-top: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .about-image-container img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Zoom effect */
+}
+
+.about-image-container:hover img {
+  transform: scale(1.05); /* Zoom in on hover */
 }

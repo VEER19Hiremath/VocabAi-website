@@ -18,7 +18,7 @@ export const FeatureItem = ({ icon, title, text }) => {
           className="expand-collapse-btn"
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          {isExpanded ? <i className="fa fa-chevron-up"></i>  :<i className="fa fa-chevron-down"></i>   }
+          {isExpanded ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i>}
         </button>
       </div>
     </div>
