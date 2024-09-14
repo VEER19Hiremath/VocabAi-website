@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/header.css";
+import TypingEffect from './TypinfEffect'; // Import the TypingEffect
 
 export const Header = (props) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -7,7 +8,6 @@ export const Header = (props) => {
     '../img/main_image_1.jpg',
     '../img/main_image_2.jpeg',
     '../img/intro-bg-2.jpg'
-
   ];
 
   useEffect(() => {
@@ -19,32 +19,38 @@ export const Header = (props) => {
   }, [images.length]);
 
   return (
-    <header id="header">
-      <div className="intro">
+    <div className="header-about-container">
+      {/* Header Section */}
+      <div className="header-section">
         <div
           className="background-image"
           style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
         ></div>
         <div className="overlay">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  <span></span>
-                </h1>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <a
-                  href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
-                  Learn More
-                </a>{" "}
-              </div>
-            </div>
+          <div className="intro-text">
+            <h1>
+              {props.data ? props.data.title : "Loading"}
+              <span></span>
+            </h1>
+            <p>{props.data ? props.data.paragraph : "Loading"}</p>
           </div>
         </div>
       </div>
-    </header>
+
+      {/* About Us Section */}
+      <div id="about" className="about-section">
+        <div className="about-content">
+          <div className="about-text-container">
+            <h2>About Us</h2>
+            <div className="about-only-text">
+              <TypingEffect text={props.data ? props.data.paragraph1 : "loading..."} />
+            </div>
+          </div>
+          <div className="about-image-container">
+            <img src="../img/about.jpg" className="img-responsive" alt="About Us" />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };

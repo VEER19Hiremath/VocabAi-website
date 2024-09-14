@@ -1,13 +1,14 @@
-/* Header */
-#header {
-  position: relative;
+/* Container wrapping both header and about sections */
+.header-about-container {
+  display: flex;
+  flex-direction: column;
   height: 100vh; /* Full viewport height */
-  overflow: hidden;
+  position: relative;
 }
 
-.intro {
+.header-section {
   position: relative;
-  height: 100%;
+  height: 60%; /* Reduced height to accommodate the About Us section */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,11 +20,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover; /* Ensure the image covers the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating */
-  z-index: 1; /* Ensure it is behind the overlay */
-  transition: background-image 1s ease-in-out; /* Smooth transition between images */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: background-image 1s ease-in-out;
 }
 
 .overlay {
@@ -32,23 +33,23 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay with some transparency */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2; /* Ensure it is above the background image */
+  z-index: 2;
 }
 
 .intro-text {
   color: #fff;
   text-align: center;
-  z-index: 3; /* Ensure text is above the overlay */
+  z-index: 3;
 }
 
 .intro-text h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -57,12 +58,12 @@
   width: 60px;
   height: 4px;
   background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  margin: 20px auto 0;
+  margin: 10px auto 0;
 }
 
 .intro-text p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .btn-custom {
@@ -71,7 +72,7 @@
   color: #fff;
   background-color: #5ca9fb;
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  padding: 14px 34px;
+  padding: 12px 28px;
   letter-spacing: 1px;
   font-size: 15px;
   font-weight: 500;
@@ -82,4 +83,52 @@
 
 .btn-custom:hover {
   background-color: #6372ff;
+}
+
+/* About Us Section */
+.about-section {
+  background-color: #f8f9fa;
+  height: 40%; /* Take the remaining height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left:120px;
+  margin-top: 20px;
+  padding: 20px;
+  z-index: 4; /* Make sure it appears above other content */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text-container {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.about-text-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-only-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.about-image-container {
+  width: 40%;
+}
+
+.about-image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -19,7 +19,7 @@ export const About = (props) => {
 
   return (
     <div id="about-container">
-      <div id="about" className="container">
+      {/* <div id="about" className="container">
         <div className="about-text-container">
           <h2>About Us</h2>
           <div class="about-only-text"><TypingEffect text={props.data ? props.data.paragraph : "loading..."} /></div>
@@ -28,7 +28,7 @@ export const About = (props) => {
         <div className="about-image-container">
           <img src="img/about.jpg" className="img-responsive" alt="About Us" />
         </div>
-      </div>
+      </div> */}
 
       {/* Separate Why Choose Us Block */}
       <div className="why-choose-us-container">
