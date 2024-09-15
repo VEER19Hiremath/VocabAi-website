@@ -35,7 +35,7 @@ export const Navigation = (props) => {
         </div>
 
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav navbar-left"> {/* Changed navbar-right to navbar-left */}
+          <ul className="nav navbar-nav navbar-right"> {/* Changed navbar-left to navbar-right */}
             <li>
               <ScrollLink
                 to="features"
@@ -70,16 +70,15 @@ export const Navigation = (props) => {
               </ScrollLink>
             </li>
             <li className="dropdown">
-            <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-              Demo <b className="caret"></b> {/* The caret will stay here */}
-            </a>
-            <ul className="dropdown-menu">
-              <li><Link to="/text-analytics-demo">Text Analytics Demo</Link></li>
-              <li><Link to="/image-analytics-demo">Image Analytics Demo</Link></li>
-              <li><Link to="/speech-emotions-demo">Speech Emotions Demo</Link></li>
-            </ul>
-          </li>
-
+              <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                Demo <b className="caret"></b> {/* The caret will stay here */}
+              </a>
+              <ul className="dropdown-menu">
+                <li><Link to="/text-analytics-demo">Text Analytics Demo</Link></li>
+                <li><Link to="/image-analytics-demo">Image Analytics Demo</Link></li>
+                <li><Link to="/speech-emotions-demo">Speech Emotions Demo</Link></li>
+              </ul>
+            </li>
             <li>
               <ScrollLink
                 to="portfolio"
