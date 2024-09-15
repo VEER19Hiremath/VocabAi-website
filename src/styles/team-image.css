@@ -18,7 +18,7 @@
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden; /* Ensure images don't overflow the container */
-  background-color: #ddedf0; /* Light background to enhance wooden frame effect */
+  background-color: #1b2d3d; /* Light background to enhance wooden frame effect */
   display: flex;
   align-items: center;
   justify-content: center;
