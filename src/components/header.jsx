@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/header.css";
 import TypingEffect from './TypinfEffect'; // Import the TypingEffect
 
@@ -10,6 +10,10 @@ export const Header = (props) => {
     '../img/intro-bg-2.jpg'
   ];
 
+  // Reference for the About text container
+  const aboutTextRef = useRef(null);
+  const [imageHeight, setImageHeight] = useState(0);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -17,6 +21,12 @@ export const Header = (props) => {
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, [images.length]);
+
+  useEffect(() => {
+    if (aboutTextRef.current) {
+      setImageHeight(aboutTextRef.current.clientHeight); // Set height based on text container
+    }
+  }, [props.data]); // Update height when data changes
 
   return (
     <div className="header-about-container">
@@ -38,15 +48,15 @@ export const Header = (props) => {
       </div>
 
       {/* About Us Section */}
-      <div id="about" className="about-section">
+      <div id="about" className="about-section" style={{ minHeight: `${imageHeight}px` }}>
         <div className="about-content">
-          <div className="about-text-container">
+          <div className="about-text-container" ref={aboutTextRef}>
             <h2>About Us</h2>
             <div className="about-only-text">
               <TypingEffect text={props.data ? props.data.paragraph1 : "loading..."} />
             </div>
           </div>
-          <div className="about-image-container">
+          <div className="about-image-container" style={{ minHeight: `${imageHeight}px` }}>
             <img src="../img/about.jpg" className="img-responsive" alt="About Us" />
           </div>
         </div>

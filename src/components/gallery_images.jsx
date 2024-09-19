@@ -20,7 +20,7 @@ export const Gallery = (props) => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
-        <div className="section-title">
+        <div className="section-title gallery-section-title">
           <h2>Gallery</h2>
           <p>This section contains images of Vocab</p>
         </div>
