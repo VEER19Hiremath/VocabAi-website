@@ -243,7 +243,8 @@
 }
 
 .about-image-container {
-  width: 40%; /* Adjust width for image */
+  width: 45%; /* Adjust width for image */
+  height:100%;
   margin-left: 15px; /* Space between text and image */
   border-radius: 8px;
   margin-top: 30px;

@@ -9,11 +9,15 @@
 }
 
 /* Why Choose Us section styling */
-.why-choose-us-container h3 {
+/* Why Choose Us section styling */
+#why-choose-us-container h3 {
   font-weight: bold;
-  margin-bottom: 30px; /* Added space between header and boxes */
+  margin-bottom: 40px; /* Increased space between header and boxes */
   font-size: 24px; /* Slightly increased font size */
+  text-decoration: underline; /* Underline the text */
+  color: #007bff; /* Optional: Change text color for emphasis */
 }
+
 
 .list-style {
   display: flex;
