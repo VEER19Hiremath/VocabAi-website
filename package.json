@@ -1,6 +1,7 @@
 {
   "name": "vocab-portal",
   "version": "1.0.0",
+  "homepage": "https://vocab-ai.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.0.0",
