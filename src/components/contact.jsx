@@ -28,13 +28,24 @@ export const Contact = (props) => {
       message,
     };
 
-    // Replace with your own EmailJS service ID, template ID, and public key
+    // Use environment variables for EmailJS credentials
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || "service_default";
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "template_default";
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "public_key_default";
+
+    // Validate that credentials are not placeholder values
+    if (!serviceId || serviceId === "service_default" || !templateId || templateId === "template_default" || !publicKey || publicKey === "public_key_default") {
+      alert("Email service is not properly configured. Please contact the administrator.");
+      console.error("Missing EmailJS credentials in environment variables");
+      return;
+    }
+
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        serviceId,
+        templateId,
         templateParams,
-        "YOUR_PUBLIC_KEY"
+        publicKey
       )
       .then(
         (result) => {

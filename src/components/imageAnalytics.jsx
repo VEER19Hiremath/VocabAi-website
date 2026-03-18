@@ -45,9 +45,7 @@ export const ImageAnalytics = ({ data }) => {
           Your browser does not support the video tag.
         </video>
         <div className="text-analytics-description-container">
-          <p ref={textRef} className="text-analytics-description">
-            {data.description}
-          </p>
+          <p ref={textRef} className="text-analytics-description"></p>
         </div>
       </div>
     </div>
